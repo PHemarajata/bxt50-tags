@@ -1,0 +1,8 @@
+/* Brixton Pet & Play — webfonts (subset for the tag scanner: JetBrains Mono 400/500/700/800 only).
+   Local: JetBrains Mono (OFL, all weights) + TH Sarabun New (DIP/SIPA license, fonts/THSarabun-LICENSE.txt).
+   Google: Sarabun 300–800 (primary UI/deck face — TH Sarabun has no 500/600/800) Playfair Display is local (fonts/, 400–900 + italics). */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap');
+@font-face{font-family:'JetBrains Mono';src:url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'JetBrains Mono';src:url('../fonts/JetBrainsMono-Medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'JetBrains Mono';src:url('../fonts/JetBrainsMono-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'JetBrains Mono';src:url('../fonts/JetBrainsMono-ExtraBold.ttf') format('truetype');font-weight:800;font-style:normal;font-display:swap}

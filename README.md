@@ -1,18 +1,61 @@
-# Publishing the tag scanner on GitHub Pages
+# Brixton Phahol 50 vehicle tag scanner
 
-The app is a single file: `index.html`, about 3.5 MB, with fonts, logo and icons built in. It holds no register data. Everything is loaded through the Apps Script after someone signs in with a PIN.
+Web app for guards, the juristic office and committee members to scan the QR on a parking tag, check its status, register vehicles and record violations. It runs on GitHub Pages at https://phemarajata.github.io/bxt50-tags/ and reads and writes the private Google Sheet only through the Apps Script web app, after someone signs in with a personal PIN.
 
-## One-time setup (about 5 minutes, in a browser)
-1. Go to github.com/new. Owner: **PHemarajata**. Name: `bxt50-tags` (any name works). Visibility: **Public**. GitHub Pages needs Public on a free account, which is safe here because the file contains no resident data. Click Create.
-2. On the new repo page, click **uploading an existing file**. Drag in `index.html` from this folder, then click **Commit changes**.
-3. Go to Settings → **Pages**. Source: *Deploy from a branch*. Branch: `main`, folder `/ (root)`. Click Save.
-4. Wait about 1 minute. The app will be at **https://phemarajata.github.io/bxt50-tags/**
+Version 2 (October 2026) moves the app out of Claude Design into plain files and adds the committee members' pets from the Brixton Pet & Play design system. The app logic is the same code as before.
 
-Open it on a phone and add it to the home screen (Chrome menu → Add to Home screen). Camera scanning needs https, which GitHub Pages provides.
+## What is in this folder
 
-## Updating later
-Re-export `index.html`, then in the repo click the file → ✎ or "Upload files" (replace) → Commit. The site updates within about 1 minute.
+| Path | What it is |
+| --- | --- |
+| `index.html` | The page GitHub Pages serves. Loads everything below. |
+| `config.js` | Settings: Apps Script URL, write key, tag year, demo mode, invite address. |
+| `app/logic.js` | All app behaviour (sign-in, PIN lockout, scanning, Apps Script calls, saving). Copied unchanged from the Claude Design file of 15 Oct 2026. |
+| `app/view.js` | The screens, written as HTML-like templates. Edit here to change wording or layout. |
+| `app/cast.js` | Which committee pet appears on which screen. |
+| `app/icons.js` | The icons the app uses, from the design system's icon set. |
+| `app/main.js`, `app/runtime.js` | Start-up code. Rarely needs changes. |
+| `app/app.css` | A few app-wide styles. |
+| `ds/` | Design system tokens and the JetBrains Mono font, copied unchanged. |
+| `assets/` | Brixton logo and the pet artwork (resized WebP copies of the design system cuts). |
+| `vendor/` | React 18.3.1, htm, qrcode-generator and jsQR, pinned and stored here so the app never depends on an outside server staying up. |
+| `demo/tags-demo.csv` | Seven sample serials with no personal data, used only in demo mode. |
 
-## Notes
-- Invite links and QR codes point to the address the app is opened from. Create invites from the Pages address, not from the design preview.
-- The script URL and write key are inside the file, so treat the key as public. What protects the data is the personal PINs plus the lockout, which pauses sign-in for 15 minutes after 10 failed attempts. The sheet itself stays private.
+There is no build step. Every file is served as it is.
+
+## Updating the app
+
+1. Edit the file on GitHub (open it, click the pencil) or upload a replacement with "Add file → Upload files".
+2. Commit. The site updates within about a minute.
+3. On a phone, close and reopen the app to load the new version.
+
+Common changes:
+
+- **Apps Script redeployed with a new URL:** change `scriptUrl` in `config.js`.
+- **New tag year:** change `tagYear` in `config.js` (co-owner tags expire on 31 December of that BE year).
+- **Wording on a screen:** find the Thai text in `app/view.js` and edit it there.
+- **Behaviour (statuses, required fields, violation types, roles):** these live in `app/logic.js`, near the top (`LISTS`, `TAG_FIELDS`, `VIO_FIELDS`) and in `status()`.
+
+## The committee pets
+
+Each screen shows one pet, and no pet appears twice on the same day. The line-up changes every day. The choice follows the design system's rotation rules (`pickCast`): the sign-in screen gets a pet that waves hello, the scanner gets one peeking over the camera card, a valid tag and a problem tag each get their own pet, and history, user management and the edit form get one each.
+
+| Pet | Owner |
+| --- | --- |
+| ไข่ตุ๋น, จี๊ด, ตู้ม | khun Fern |
+| มะเขือ & มังคุด | khun Benz |
+| Raptor | khun Eye |
+| จู๋จี๋, เหมียว | P |
+
+To add a pose, copy the cut from the design system (`assets/artwork/cast/<pet>/<pose>.png`), save it as WebP in `assets/cast/<pet>/`, and add the pose name to `SHIPPED` in `app/cast.js`. Mali and Khanom were retired on 9 October 2026 and are not used.
+
+## Demo and training
+
+- Open `?demo=1` (for example https://phemarajata.github.io/bxt50-tags/?demo=1) for the training mode used in the user guide screenshots. It never contacts the Apps Script.
+- If the Apps Script cannot be reached, the app falls back to demo mode with PIN 1111 (guard), 2222 (office) and 3333 (committee) on sample data.
+
+## Security notes
+
+- The script URL and write key are in `config.js`, so treat the key as public. Personal PINs and the lockout (15 minutes after 10 wrong attempts) protect the data. The sheet itself stays private.
+- No register data is stored in this repository. Everything is loaded through the Apps Script after sign-in.
+- Camera scanning needs https, which GitHub Pages provides.

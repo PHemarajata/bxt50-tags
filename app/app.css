@@ -1,0 +1,10 @@
+/* App-level styles. Colours, type and spacing come from ds/tokens (Brixton Pet & Play design system). */
+html, body { margin: 0; background: #D9DEE7; font-family: 'Sarabun', sans-serif; color: #13233B; }
+a { color: #0C2340; }
+a:hover { color: #E8762B; }
+input, button, select, textarea { font-family: inherit; }
+button:disabled { cursor: default; }
+@keyframes bxScan { 0% { top: 8%; } 50% { top: 88%; } 100% { top: 8%; } }
+/* Orange buttons darken on hover (was style-hover in the Design file). */
+.hov-accent:hover:not(:disabled) { background: #D2661F !important; }
+#root:empty::after { content: 'กำลังโหลด…'; display: block; text-align: center; padding: 40vh 0; color: #5B6B85; font: 14px 'Sarabun', sans-serif; }

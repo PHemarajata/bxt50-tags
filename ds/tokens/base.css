@@ -1,0 +1,84 @@
+/* Brixton Pet & Play — tokens (from Origin DS Export/colors_and_type.css) */
+/* Base Resets ───────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-relaxed);
+  color: var(--fg-primary);
+  background-color: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-family: var(--h1-font);
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  line-height: var(--h1-leading);
+  letter-spacing: var(--h1-tracking);
+  color: var(--fg-primary);
+}
+
+h2 {
+  font-family: var(--h2-font);
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  line-height: var(--h2-leading);
+}
+
+h3 {
+  font-family: var(--h3-font);
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  line-height: var(--h3-leading);
+}
+
+h4 {
+  font-family: var(--h4-font);
+  font-size: var(--h4-size);
+  font-weight: var(--h4-weight);
+  line-height: var(--h4-leading);
+}
+
+p {
+  font-family: var(--body-font);
+  font-size: var(--body-size);
+  font-weight: var(--body-weight);
+  line-height: var(--body-leading);
+}
+
+a {
+  color: var(--fg-link);
+  text-decoration: none;
+  transition: var(--transition-colors);
+}
+a:hover { color: var(--fg-link-hover); }
+/* Utility Classes ───────────────────────────────────── */
+
+/* Colors */
+.text-primary   { color: var(--fg-primary); }
+.text-secondary { color: var(--fg-secondary); }
+.text-muted     { color: var(--fg-muted); }
+.text-inverse   { color: var(--fg-inverse); }
+.text-brand     { color: var(--fg-brand); }
+.text-accent    { color: var(--fg-accent); }
+.text-premium   { color: var(--fg-premium); }
+
+.bg-page        { background-color: var(--bg-page); }
+.bg-surface     { background-color: var(--bg-surface); }
+.bg-brand       { background-color: var(--bg-brand); }
+.bg-accent      { background-color: var(--bg-accent); }
+
+/* Shadows */
+.shadow-1 { box-shadow: var(--shadow-1); }
+.shadow-2 { box-shadow: var(--shadow-2); }
+.shadow-3 { box-shadow: var(--shadow-3); }
+
+/* Radius */
+.rounded-sm   { border-radius: var(--radius-sm); }
+.rounded      { border-radius: var(--radius-md); }
+.rounded-lg   { border-radius: var(--radius-lg); }
+.rounded-full { border-radius: var(--radius-full); }

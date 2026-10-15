@@ -1,0 +1,89 @@
+/* Brixton Pet & Play — tokens (from Origin DS Export/colors_and_type.css) */
+/* Typography ────────────────────────────────────────── */
+:root {
+  /* Font families */
+  --font-display:   'Playfair Display', 'Georgia', serif;
+  --font-body:      'Sarabun', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:      'JetBrains Mono', 'Courier New', monospace;
+  /* Official-document Thai face (TH Sarabun New, 400/700 only) — DEFAULT for A4 notices & letters. Renders ~30% smaller than Sarabun — set 16pt body. */
+  --font-official:  'TH Sarabun New', 'Sarabun', sans-serif;
+
+  /* Font sizes — rem scale */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-md:   1.125rem;   /* 18px */
+  --text-lg:   1.25rem;    /* 20px */
+  --text-xl:   1.5rem;     /* 24px */
+  --text-2xl:  1.875rem;   /* 30px */
+  --text-3xl:  2.25rem;    /* 36px */
+  --text-4xl:  3rem;       /* 48px */
+  --text-5xl:  3.75rem;    /* 60px */
+  --text-6xl:  4.5rem;     /* 72px */
+
+  /* Font weights */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* Line heights */
+  --leading-tight:  1.2;
+  --leading-snug:   1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.65;
+  --leading-loose:  1.8;
+
+  /* Letter spacing */
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0em;
+  --tracking-wide:    0.04em;
+  --tracking-wider:   0.08em;
+  --tracking-widest:  0.16em;
+}
+/* Semantic Type Styles ─────────────────────────────── */
+:root {
+  /* Hero / Display */
+  --h1-font:   var(--font-display);
+  --h1-size:   var(--text-5xl);
+  --h1-weight: var(--weight-bold);
+  --h1-leading:var(--leading-tight);
+  --h1-tracking:var(--tracking-tight);
+
+  /* Section heading */
+  --h2-font:   var(--font-body);
+  --h2-size:   var(--text-3xl);
+  --h2-weight: var(--weight-bold);
+  --h2-leading:var(--leading-snug);
+
+  /* Sub-heading */
+  --h3-font:   var(--font-body);
+  --h3-size:   var(--text-2xl);
+  --h3-weight: var(--weight-semibold);
+  --h3-leading:var(--leading-snug);
+
+  /* Card title */
+  --h4-font:   var(--font-body);
+  --h4-size:   var(--text-lg);
+  --h4-weight: var(--weight-semibold);
+  --h4-leading:var(--leading-snug);
+
+  /* Body */
+  --body-font:    var(--font-body);
+  --body-size:    var(--text-base);
+  --body-weight:  var(--weight-regular);
+  --body-leading: var(--leading-relaxed);
+
+  /* Caption / Label */
+  --caption-font:    var(--font-body);
+  --caption-size:    var(--text-sm);
+  --caption-weight:  var(--weight-medium);
+  --caption-leading: var(--leading-normal);
+  --caption-tracking:var(--tracking-wide);
+
+  /* Price display */
+  --price-font:    var(--font-mono);
+  --price-size:    var(--text-xl);
+  --price-weight:  var(--weight-bold);
+}

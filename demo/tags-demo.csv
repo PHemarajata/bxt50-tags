@@ -1,0 +1,9 @@
+serial,tag_type,vehicle_class,owner_type,tag_status,issue_date,expiry_date,issued_by,previous_serial,room_no,address_no,resident_name,phone,phone_2,line_id,lease_end,plate,plate_province,make,model,colour,fuel,vehicle_photo,vehicle_no,second_vehicle_fee_paid_through,disabled_parking_ok,big_bike_ok,violation_count,notes,updated_at,updated_by
+เลขที่บัตร / Serial,ประเภทบัตร / Tag type,ประเภทรถ / Vehicle class,สถานะผู้ใช้ / Owner type,สถานะบัตร / Tag status,issue_date,expiry_date,issued_by,previous_serial,room_no,address_no,resident_name,phone,phone_2,line_id,lease_end,plate,plate_province,make,model,colour,fuel,vehicle_photo,vehicle_no,second_vehicle_fee_paid_through,disabled_parking_ok,big_bike_ok,violation_count,notes,updated_at,updated_by
+CO001,CO,รถยนต์,เจ้าของร่วม,ยังไม่ออก,,,,,,,,,,,,,,,,,,,,,,,,,,
+CO002,CO,รถยนต์,เจ้าของร่วม,ยังไม่ออก,,,,,,,,,,,,,,,,,,,,,,,,,,
+CO003,CO,รถยนต์,เจ้าของร่วม,ยังไม่ออก,,,,,,,,,,,,,,,,,,,,,,,,,,
+CR001,CR,รถยนต์,ผู้เช่า,ยังไม่ออก,,,,,,,,,,,,,,,,,,,,,,,,,,
+CR002,CR,รถยนต์,ผู้เช่า,ยังไม่ออก,,,,,,,,,,,,,,,,,,,,,,,,,,
+MO001,MO,จักรยานยนต์,เจ้าของร่วม,ยังไม่ออก,,,,,,,,,,,,,,,,,,,,,,,,,,
+MR001,MR,จักรยานยนต์,ผู้เช่า,ยังไม่ออก,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,117 @@
+/* Brixton Pet & Play — tokens (from Origin DS Export/colors_and_type.css) */
+/* Brand Colors ─────────────────────────────────────── */
+:root {
+  /* Navy scale — primary brand color */
+  --color-navy-950: #060F1E;
+  --color-navy-900: #0C2340;
+  --color-navy-800: #122E56;
+  --color-navy-700: #1E4178;
+  --color-navy-600: #2B5BA0;
+  --color-navy-500: #3A74C4;
+  --color-navy-400: #6096D6;
+  --color-navy-300: #90B8E5;
+  --color-navy-200: #BDD6F0;
+  --color-navy-100: #E1EDF9;
+  --color-navy-50:  #F2F7FC;
+
+  /* Orange — accent, CTA */
+  --color-orange-600: #C05A14;
+  --color-orange-500: #E8762B;
+  --color-orange-400: #F0934F;
+  --color-orange-300: #F6B07C;
+  --color-orange-200: #FACDB0;
+  --color-orange-100: #FDE8D8;
+  --color-orange-50:  #FFF5EE;
+
+  /* Gold — premium sub-brands (Park Origin, Hampton) */
+  --color-gold-600: #9E7A24;
+  --color-gold-500: #C9A84C;
+  --color-gold-400: #D8BC74;
+  --color-gold-300: #E6D09B;
+  --color-gold-200: #F0E4BF;
+  --color-gold-100: #F8F2DC;
+  --color-gold-50:  #FDFAF0;
+
+  /* Neutrals — warm-toned grays */
+  --color-gray-950: #0F0E0C;
+  --color-gray-900: #1A1814;
+  --color-gray-800: #2D2B27;
+  --color-gray-700: #46433E;
+  --color-gray-600: #605D58;
+  --color-gray-500: #7B7875;
+  --color-gray-400: #9E9B97;
+  --color-gray-300: #C2BFB9;
+  --color-gray-200: #E0DDDA;
+  --color-gray-100: #EEECE8;
+  --color-gray-50:  #F8F6F2;
+  --color-white:    #FFFFFF;
+
+  /* Status colors */
+  --color-success-700: #0D5A30;
+  --color-success-500: #1B7A47;
+  --color-success-100: #D4F0E2;
+  --color-warning-700: #8C5200;
+  --color-warning-500: #D4850A;
+  --color-warning-100: #FDE8B0;
+  --color-error-700:   #8C1A12;
+  --color-error-500:   #C0392B;
+  --color-error-100:   #FAD4D0;
+  --color-info-500:    #2B5BA0;
+  --color-info-100:    #E1EDF9;
+}
+/* Semantic Color Aliases ───────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg-page:          var(--color-gray-50);
+  --bg-surface:       var(--color-white);
+  --bg-surface-alt:   var(--color-gray-100);
+  --bg-brand:         var(--color-navy-900);
+  --bg-brand-deep:    var(--color-navy-950);
+  --bg-accent:        var(--color-orange-500);
+  --bg-premium:       var(--color-gold-500);
+
+  /* Foreground / Text */
+  --fg-primary:       var(--color-gray-900);
+  --fg-secondary:     var(--color-gray-600);
+  --fg-muted:         var(--color-gray-400);
+  --fg-inverse:       var(--color-white);
+  --fg-brand:         var(--color-navy-900);
+  --fg-accent:        var(--color-orange-500);
+  --fg-premium:       var(--color-gold-500);
+  --fg-link:          var(--color-navy-700);
+  --fg-link-hover:    var(--color-orange-500);
+
+  /* Borders */
+  --border-subtle:    var(--color-gray-100);
+  --border-default:   var(--color-gray-200);
+  --border-strong:    var(--color-gray-300);
+  --border-brand:     var(--color-navy-900);
+  --border-accent:    var(--color-orange-500);
+
+  /* Interactive */
+  --interactive-primary:        var(--color-navy-900);
+  --interactive-primary-hover:  var(--color-navy-700);
+  --interactive-accent:         var(--color-orange-500);
+  --interactive-accent-hover:   var(--color-orange-600);
+}
+/* Community / sticker palette (from brixton-notice.css) */
+:root{
+  --cm-cream:#FAF4E8; --cm-paper:#FFFDF8; --cm-pink:#F3C9C6; --cm-pink-d:#D96B7E;
+  --cm-sage:#DDE8D3; --cm-sage-d:#4A6B4E; --cm-butter:#F6DC8A; --cm-butter-d:#E0B23E; --cm-navy:#2E3D57;
+  --cm-brown:#8A6A4F;
+}
+/* Document ink (deck + notice layers share these) */
+:root{
+  --ink:#13233B; --ink-2:#3C4C63; --ink-3:#6B7890;
+  --paper:#EEF1F6; --paper-2:#F6F8FB; --line:rgba(30,65,120,.13);
+  --st-green:var(--color-success-500); --st-green-bg:#E4F2EA;
+  --st-amber:#C77C12; --st-amber-bg:#FBEFD9;
+  --st-red:var(--color-error-500);     --st-red-bg:#FAE6E3;
+  /* Mascot palette — Mali & Khanom (max 6 colours; orange for accents only) */
+  --mascot-outline: #0C2340;
+  --mascot-white:   #FFFFFF;
+  --mascot-grey:    #9E9B97;
+  --mascot-gold:    #F0C27A;
+  --mascot-pink:    #F6A6C9;
+  --mascot-orange:  #E8762B;
+}
