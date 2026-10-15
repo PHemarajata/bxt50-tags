@@ -15,12 +15,13 @@ export const CAST = [
   { key: 'meow', th: 'เหมียว', owner: 'P' },
 ];
 
-// Same table as the design system. Only the purposes this app uses need their poses shipped.
+// Same table as the design system. Only the purposes this app and its user guide use need their poses shipped.
 export const PURPOSE = {
   welcome:     ['hello', 'hero'],
   notice:      ['notice', 'sign', 'hero'],
   maintenance: ['repair', 'sign', 'notice'],
   prohibition: ['stop', 'notice'],
+  tip:         ['info', 'notice'],
   teaser:      ['peek'],
   neutral:     ['hero', 'sit', 'front'],
 };
@@ -34,7 +35,7 @@ const SHIPPED = {
   'jujee':           ['hello', 'hero', 'front', 'peek', 'sign'],
   'raptor':          ['hero', 'front', 'repair'],
   'toom':            ['hero'],
-  'meow':            ['hello', 'hero', 'notice', 'sign', 'sit', 'stop'],
+  'meow':            ['hello', 'hero', 'info', 'notice', 'sign', 'sit', 'stop'],
 };
 
 export function hasPose(key, pose) { return (SHIPPED[key] || []).includes(pose); }

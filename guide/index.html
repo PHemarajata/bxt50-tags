@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>คู่มือการใช้งาน · แอปบัตรจอดรถ Brixton Phahol 50</title>
+<!-- Edit the Thai text directly in this file. Each <section class="page"> is one A4 sheet.
+     data-part says which section a page belongs to (office, committee, guard). Pages shared by
+     several sections are repeated on purpose so each section can be printed on its own.
+     Screenshots are in img/, pets in ../assets/cast/. -->
+<link rel="stylesheet" href="../ds/tokens/fonts.css">
+<link rel="stylesheet" href="../ds/tokens/colors.css">
+<link rel="stylesheet" href="guide.css">
+<script src="guide.js"></script>
+</head>
+<body data-show="all">
+<nav class="toolbar" aria-label="เลือกส่วนของคู่มือ">
+  <span class="name">คู่มือแอปบัตรจอดรถ</span>
+  <a href="#" data-show="all">ทั้งหมด</a>
+  <a href="#office" data-show="office">1 · สำนักงานนิติฯ</a>
+  <a href="#committee" data-show="committee">2 · กรรมการ</a>
+  <a href="#guard" data-show="guard">3 · รปภ.</a>
+  <button id="print" type="button">พิมพ์ / บันทึก PDF</button>
+</nav>
+<main class="desk">
+<section class="page cover" data-part="intro">
+  <div class="band"></div>
+  <div class="body">
+    <div class="toprow"><img class="logo" src="../assets/brixton-logo.png" alt="Brixton Pet &amp; Play Phahol 50 Station"><div class="ver">USER GUIDE · v2<br>ตุลาคม 2569</div></div>
+    <div style="margin-top:8mm"><div class="kicker" style="font-size:11pt;letter-spacing:.18em">VEHICLE TAG SCANNER</div>
+    <h1 style="margin-top:2mm">คู่มือการใช้งาน<br><span>แอปบัตรจอดรถ</span></h1><div class="rule" style="width:120mm;margin-top:5mm"></div></div>
+    <p class="lead" style="font-size:13pt;max-width:150mm">สำหรับสำนักงานนิติบุคคล คณะกรรมการ และเจ้าหน้าที่รักษาความปลอดภัย ใช้สแกน QR บนบัตรจอดรถ ตรวจสอบสิทธิ์ ลงทะเบียนรถ และบันทึกการกระทำผิด คู่มือแบ่งเป็น 3 ส่วนตามบทบาท แต่ละส่วนพิมพ์แยกและใช้ได้ครบในตัว</p>
+    <div class="parts"><a class="part" href="#office"><span class="no">ส่วนที่ 1 · 9 หน้า</span><span class="t">สำนักงานนิติฯ</span><span>ทุกงานของสำนักงาน: ลงทะเบียนรถ แก้ไขบัตร บันทึกการกระทำผิด และจัดการผู้ใช้</span></a><a class="part" href="#committee"><span class="no">ส่วนที่ 2 · 6 หน้า</span><span class="t">กรรมการ</span><span>ดูข้อมูลบัตรครบทุกช่อง ค้นหาทะเบียน และติดตามการกระทำผิด โดยแก้ไขไม่ได้</span></a><a class="part" href="#guard"><span class="no">ส่วนที่ 3 · 6 หน้า</span><span class="t">รปภ.</span><span>สแกนบัตรที่ป้อม อ่านสถานะ ดูสิทธิ์ช่องจอด และโทรหาเจ้าของรถ</span></a></div>
+    <div class="hero"><img class="" src="../assets/cast/khaitoon/hello.webp" alt="ไข่ตุ๋น" style="height:72mm"></div>
+    <div class="panel url"><div><div class="kicker">เปิดแอปได้ที่</div><div class="big">phemarajata.github.io/bxt50-tags</div>
+    <div style="color:rgba(255,255,255,.85);margin-top:1mm">ใช้ได้บน Android และ iPhone ผ่าน Chrome หรือ Safari · ไม่ต้องติดตั้งแอป<br>คู่มือฉบับออนไลน์: phemarajata.github.io/bxt50-tags/guide</div></div></div>
+  </div>
+  <div class="foot"><span>นิติบุคคลอาคารชุด บริกซ์ตัน เพ็ท แอนด์ เพลย์ พหลโยธิน 50 สเตชั่น</span><span>065-472-1182</span></div>
+</section>
+<section class="page " data-part="office">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">ส่วนที่ 1 · OFFICE</div><h2>คู่มือสำหรับ<span>สำนักงานนิติฯ</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/makuea-mangkood/hello.webp" alt="มะเขือ & มังคุด"></div>
+    <p class="lead">สำนักงานนิติฯ เป็นบทบาทเดียวที่แก้ไขทะเบียนได้ ทั้งลงทะเบียนรถกับบัตร แก้ไขข้อมูลบัตร ถ่ายรูปรถ บันทึกการกระทำผิด และเชิญหรือระงับผู้ใช้ ระบบตรวจสิทธิ์ที่ฐานข้อมูลทุกครั้งที่บันทึก จึงไม่มีบทบาทอื่นแก้ข้อมูลแทนได้</p>
+    <table><thead><tr><th>สิ่งที่ทำได้ในแอป</th><th class="c">รปภ.</th><th class="c me">สำนักงานนิติฯ</th><th class="c">กรรมการ</th></tr></thead><tbody><tr><td>สแกน QR หรือพิมพ์เลขบัตร</td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>สถานะบัตร วันหมดอายุ สิทธิ์ช่องจอด รูปรถ</td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ทะเบียนรถ ยี่ห้อ รุ่น สี เลขห้อง เบอร์โทร</td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ชื่อ บ้านเลขที่ LINE ID เบอร์สำรอง หมายเหตุ และประวัติการออกบัตร</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ค้นหาด้วยทะเบียนรถ เลขห้อง หรือชื่อ</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>การกระทำผิดของบัตรที่เปิด</td><td class="c"><span style="font-size:9.5pt">จำนวนครั้ง</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ประวัติการกระทำผิดทั้งหมด</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ลงทะเบียนรถ แก้ไขข้อมูลบัตร ถ่ายรูปรถ</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td></tr><tr><td>บันทึกการกระทำผิด</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td></tr><tr><td>เชิญผู้ใช้ รีเซ็ต PIN ระงับผู้ใช้</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td></tr></tbody></table>
+    <div class="grid2" style="align-items:end">
+      <div><div class="kicker" style="color:var(--muted);margin-bottom:2mm">ในส่วนนี้</div><ol class="toc"><li><span>1.1</span>ภาพรวมและสิทธิ์ของท่าน</li><li><span>1.2</span>เริ่มใช้งานและเข้าสู่ระบบ</li><li><span>1.3</span>สแกนบัตรและค้นหา</li><li><span>1.4</span>อ่านสถานะบัตร</li><li><span>1.5</span>ข้อมูลบัตร</li><li><span>1.6</span>ลงทะเบียนและแก้ไขบัตร</li><li><span>1.7</span>บันทึกและติดตามการกระทำผิด</li><li><span>1.8</span>จัดการผู้ใช้</li><li><span>1.9</span>คำถามที่พบบ่อย</li></ol></div>
+      <div class="tip"><div><h3>มะเขือ & มังคุด ฝากบอก</h3>ข้อมูลผู้พักอาศัยเป็นข้อมูลส่วนบุคคล ใช้เพื่อดูแลที่จอดรถเท่านั้น ห้ามถ่ายภาพหน้าจอส่งต่อ ทุกครั้งที่เปิดดูบัตร ระบบบันทึกชื่อของท่านและเวลาไว้</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 1 สำนักงานนิติฯ</span><span>1.1 / 9</span></div>
+</section>
+<section class="page " data-part="office">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">1.2 · GETTING STARTED</div><h2>เริ่มใช้งาน<span>และเข้าสู่ระบบ</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/jujee/sign.webp" alt="จู๋จี๋"></div>
+    <p class="lead">ผู้ใช้ทุกคนเริ่มจาก<b>คำเชิญ</b> ท่านหรือเจ้าหน้าที่สำนักงานคนอื่นสร้างคำเชิญได้ที่หน้า จัดการผู้ใช้ (หน้า 1.8) คำเชิญมีรหัส 6 ตัว ใช้ได้ครั้งเดียวภายใน 48 ชั่วโมง ท่านตั้ง PIN 4 หลักเอง ไม่มีใครรู้ PIN ของท่าน และไม่ต้องมีบัญชี Google</p>
+    <div class="split l2">
+      <div class="shots c2"><figure><div class="phone"><img src="img/of-login.webp" alt="หน้าเข้าสู่ระบบ มีช่อง PIN และปุ่มเข้าใช้งาน"></div><figcaption>หน้าเข้าสู่ระบบ</figcaption></figure><figure><div class="phone"><img src="img/of-redeem.webp" alt="หน้าตั้ง PIN จากคำเชิญ มีช่องรหัสเชิญและช่อง PIN สองช่อง"></div><figcaption>หน้าตั้ง PIN จากคำเชิญ</figcaption></figure></div>
+      <div style="display:flex;flex-direction:column;gap:3mm">
+        <h3>ครั้งแรก: รับคำเชิญ</h3>
+        <ol class="steps">
+          <li><span>เปิด<b>ลิงก์คำเชิญ</b>ที่ได้รับทาง LINE หน้าตั้ง PIN จะเปิดพร้อมรหัสเชิญให้</span></li>
+          <li><span>หรือเปิดแอป แตะ <b>ผู้ใช้ใหม่ / ได้รับคำเชิญ</b> แล้วแตะ <b>สแกน QR คำเชิญ</b> จากโทรศัพท์ของผู้เชิญ หรือพิมพ์รหัส 6 ตัว</span></li>
+          <li><span>ตั้ง <b>PIN 4 หลัก</b> พิมพ์ทั้งสองช่องให้ตรงกัน PIN ต้องไม่ซ้ำกับผู้ใช้คนอื่น</span></li>
+          <li><span>แตะ <b>ตั้ง PIN และเข้าใช้งาน</b> แอปเข้าสู่ระบบให้ทันที และแสดงรหัสผู้ใช้ของท่าน เช่น <span class="mono">OF02</span></span></li>
+        </ol>
+        <h3 style="margin-top:2mm">ครั้งต่อไป</h3>
+        <ol class="steps">
+          <li><span>เปิด <b>phemarajata.github.io/bxt50-tags</b> พิมพ์ PIN แล้วแตะ <b>เข้าใช้งาน</b> แอปรู้เองว่าท่านเป็นสำนักงานนิติฯ</span></li>
+          <li><span>ชื่อของท่านอยู่มุมขวาบน แตะชื่อเพื่อ<b>ออกจากระบบ</b>ทุกครั้งที่เลิกใช้งาน</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="grid3">
+      <div class="stat"><span class="n">5 นาที</span>ไม่มีการใช้งาน 5 นาที แอปออกจากระบบเอง ถ้าปิดหน้าแอปแล้วเปิดใหม่ภายใน 5 นาที ไม่ต้องใส่ PIN ใหม่</div>
+      <div class="stat"><span class="n">12 ชม.</span>ใช้งานต่อเนื่องได้สูงสุด 12 ชั่วโมงต่อการเข้าสู่ระบบหนึ่งครั้ง จากนั้นต้องใส่ PIN ใหม่</div>
+      <div class="stat"><span class="n">10 ครั้ง</span>ใส่ PIN หรือรหัสเชิญผิดรวม 10 ครั้ง (นับทุกเครื่องรวมกัน) ระบบหยุดรับการเข้าสู่ระบบ 15 นาที</div>
+    </div>
+    <div class="callout navy"><b>จุดสถานะใต้ปุ่ม</b> สีเขียว = เชื่อมต่อฐานข้อมูลแล้ว · สีเหลือง = กำลังตรวจสอบ · สีแดง = ติดต่อไม่ได้ ให้แตะ <b>ตรวจสอบอีกครั้ง</b> หากเห็นกล่องสีเหลือง <b>โหมดทดลอง</b> แปลว่ายังเชื่อมต่อฐานข้อมูลไม่ได้ ข้อมูลที่เห็นเป็นตัวอย่าง ห้ามใช้ตัดสินสิทธิ์จอดรถ</div>
+    <div class="callout"><b>เพิ่มไอคอนบนหน้าจอโทรศัพท์</b> Android (Chrome): เมนู ⋮ → เพิ่มลงในหน้าจอหลัก · iPhone (Safari): ปุ่มแชร์ → เพิ่มไปยังหน้าจอโฮม หากกล้องไม่เปิดจากไอคอน ให้เปิดผ่านเบราว์เซอร์แทน</div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 1 สำนักงานนิติฯ</span><span>1.2 / 9</span></div>
+</section>
+<section class="page " data-part="office">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">1.3 · SCAN</div><h2>สแกนบัตร<span>และค้นหา</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/meow/hero.webp" alt="เหมียว"></div>
+    <div class="split l1">
+      <div class="shots"><figure><div class="phone"><img src="img/of-home.webp" alt="หน้าแรก มีกรอบสแกน QR ช่องพิมพ์เลขบัตร และช่องค้นหา"></div><figcaption>หน้าแรกหลังเข้าสู่ระบบ</figcaption></figure></div>
+      <div style="display:flex;flex-direction:column;gap:3mm">
+        <h3>สแกน QR บนบัตร</h3>
+        <ol class="steps">
+          <li><span>แตะกรอบสีกรมท่า <b>แตะเพื่อเปิดกล้องสแกน QR</b> ครั้งแรกให้กด<b>อนุญาต</b>การใช้กล้อง</span></li>
+          <li><span>เล็ง QR บนบัตรให้อยู่ในกรอบ ห่างประมาณ 15–25 ซม. บัตรรถยนต์ติดด้านในกระจกหน้า บัตรจักรยานยนต์ติดบนตัวรถ ผลแสดงทันที</span></li>
+          <li><span>ถ้า QR อ่านไม่ได้ (แสงสะท้อน ฟิล์มเข้ม) ให้<b>พิมพ์เลขบัตร</b>ที่พิมพ์อยู่บนบัตร เช่น CO001 แล้วแตะ <b>ค้นหา</b> เว้นวรรคหรือพิมพ์ตัวเล็กก็ได้</span></li>
+        </ol>
+        <table><thead><tr><th>อักษรนำ</th><th>ประเภทบัตร</th></tr></thead><tbody>
+          <tr><td class="mono">CO</td><td>รถยนต์ · เจ้าของร่วม</td></tr><tr><td class="mono">CR</td><td>รถยนต์ · ผู้เช่า</td></tr>
+          <tr><td class="mono">MO</td><td>จักรยานยนต์ · เจ้าของร่วม</td></tr><tr><td class="mono">MR</td><td>จักรยานยนต์ · ผู้เช่า</td></tr></tbody></table>
+        <p class="small">ตามด้วยเลข 3 หลัก ถ้าขึ้น <b>ไม่พบเลขบัตร … ในทะเบียน</b> แปลว่าเลขผิดหรือไม่ใช่บัตรของโครงการ</p>
+        
+        <h3>ค้นหาในทะเบียน</h3>
+        <p>พิมพ์บางส่วนของ<b>ทะเบียนรถ เลขห้อง บ้านเลขที่ ชื่อ หรือเลขบัตร</b> ในช่อง SEARCH REGISTER ผลแสดงได้สูงสุด 8 รายการพร้อมสถานะบัตร แตะรายการเพื่อเปิด</p>
+        <h3>ปุ่มบนหน้าแรก</h3>
+        <ul class="dia"><li><span><b>ประวัติการกระทำผิดทั้งหมด</b> บอกจำนวนเรื่องที่ยังค้าง (หน้า 1.7)</span></li><li><span><b>จัดการผู้ใช้และรหัส PIN</b> (หน้า 1.8)</span></li></ul>
+      </div>
+    </div>
+    <div class="callout"><b>ข้อมูลอัปเดตเมื่อไร</b> แอปโหลดทะเบียนทั้งหมดครั้งเดียวตอนเข้าสู่ระบบ ถ้าเพิ่งมีการลงทะเบียนหรือแก้ไขบัตรหลังจากนั้น ให้แตะ <b>โหลดใหม่</b> ที่ด้านล่างหน้าแรกก่อนสแกน บรรทัดล่างสุดบอกจำนวนบัตรที่โหลดและเวลาออกจากระบบอัตโนมัติ</div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 1 สำนักงานนิติฯ</span><span>1.3 / 9</span></div>
+</section>
+<section class="page " data-part="office">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">1.4 · TAG STATUS</div><h2>อ่าน<span>สถานะบัตร</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/raptor/hero.webp" alt="Raptor"></div>
+    <p class="lead">สถานะอยู่บนสุดของหน้าบัตร แถบสีด้านบนการ์ดและป้ายมุมขวาบอกผลทันที ใต้เลขบัตรบอกวันหมดอายุหรือเหตุผล</p>
+    <div class="shots c2" style="max-width:150mm;margin:0 auto;width:100%"><figure><div class="crop"><img src="img/of-st-valid.webp" alt="การ์ดสถานะ บัตรใช้ได้"></div><figcaption><span class="s-ok">● บัตรใช้ได้</span></figcaption></figure><figure><div class="crop"><img src="img/of-st-expired.webp" alt="การ์ดสถานะ บัตรหมดอายุ"></div><figcaption><span class="s-bad">● บัตรหมดอายุ</span></figcaption></figure><figure><div class="crop"><img src="img/of-st-lost.webp" alt="การ์ดสถานะ แจ้งหาย"></div><figcaption><span class="s-bad">● แจ้งหาย</span></figcaption></figure><figure><div class="crop"><img src="img/of-st-unissued.webp" alt="การ์ดสถานะ ยังไม่ออกบัตร"></div><figcaption><span class="s-none">● ยังไม่ออกบัตร</span></figcaption></figure></div><table><thead><tr><th>สถานะอื่น</th><th>ความหมาย</th></tr></thead><tbody>
+          <tr><td class="key s-warn">● บัตรใกล้หมดอายุ</td><td>ยังใช้ได้ เหลือไม่เกิน 30 วัน</td></tr>
+          <tr><td class="key s-bad">● ยกเลิก / คืนบัตรแล้ว</td><td>ไม่มีสิทธิ์จอดในโครงการ</td></tr>
+          <tr><td class="key s-bad">▣ รถคันที่ 2 ค้างชำระ</td><td>ค่าธรรมเนียมรายปีของรถคันที่ 2 เลยกำหนด</td></tr></tbody></table><h3>แอปตัดสินสถานะอย่างไร (ตามลำดับ)</h3>
+        <ol class="steps">
+          <li><span>สถานะในทะเบียนเป็น <b>ยังไม่ออก</b> → <span class="s-none">ยังไม่ออกบัตร</span></span></li>
+          <li><span>เป็น <b>สูญหาย</b> → <span class="s-bad">แจ้งหาย</span></span></li>
+          <li><span>เป็น <b>ยกเลิก</b> หรือ <b>คืนแล้ว</b> → <span class="s-bad">ยกเลิกแล้ว / คืนบัตรแล้ว</span></span></li>
+          <li><span>นอกนั้นดู<b>วันหมดอายุบัตร</b>ในทะเบียน ถ้าไม่ได้กรอกไว้ ถือว่าหมดอายุ 31 ธ.ค. 2570 (สิ้นรอบบัตรเจ้าของร่วม)</span></li>
+          <li><span>เลยวันหมดอายุแล้ว → <span class="s-bad">บัตรหมดอายุ</span> · เหลือไม่เกิน 30 วัน → <span class="s-warn">บัตรใกล้หมดอายุ</span> (ยังใช้ได้) · มากกว่านั้น → <span class="s-ok">บัตรใช้ได้</span></span></li>
+        </ol>
+        <p class="small">ป้าย <b>รถคันที่ 2 · ค้างชำระค่าธรรมเนียม</b> แสดงแยกจากสถานะบัตร เมื่อรถเป็นคันที่ 2 ของห้อง และช่อง “ชำระถึง” ว่างหรือเลยวันที่กรอกไว้แล้ว</p>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 1 สำนักงานนิติฯ</span><span>1.4 / 9</span></div>
+</section>
+<section class="page " data-part="office">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">1.5 · TAG RECORD</div><h2>ข้อมูล<span>บัตรแบบเต็ม</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/toom/hero.webp" alt="ตู้ม"></div>
+    <div class="split l2w">
+      <div class="shots c2"><figure><div class="phone"><img src="img/of-rec-top.webp" alt="หน้าบัตรแบบเต็ม ส่วนบน"></div><figcaption>ส่วนบนของหน้าบัตร</figcaption></figure><figure><div class="phone"><img src="img/of-rec-bottom.webp" alt="หน้าบัตรแบบเต็ม ส่วนล่าง พร้อมปุ่มแก้ไขและบันทึกการกระทำผิด"></div><figcaption>ประวัติและปุ่มแก้ไข</figcaption></figure></div>
+      <div style="display:flex;flex-direction:column;gap:3mm"><h3>ส่วนต่าง ๆ ของหน้าบัตร</h3><ul class="dia">
+          <li><span><b>การ์ดสถานะ</b> เลขบัตร ประเภท สถานะ และวันหมดอายุ</span></li>
+          <li><span><b>ช่องสิทธิ์</b> รถยนต์แสดงช่องผู้พิการ จักรยานยนต์แสดงช่องบิ๊กไบค์ (พื้นสีกรมท่า = อนุญาต) และช่องรถไฟฟ้า EV (พื้นสีเขียว = ใช้ช่องชาร์จได้)</span></li>
+          <li><span><b>รูปรถ</b> โหลดตามมาหลังเปิดบัตร ถ้าลงทะเบียนพร้อมรูป</span></li>
+          <li><span><b>ข้อมูลรถและผู้ลงทะเบียน</b> ทะเบียน รถ เลขห้อง บ้านเลขที่ ชื่อ โทรศัพท์ เบอร์สำรอง LINE ID วันที่ออกบัตร วันหมดอายุ สิ้นสุดสัญญาเช่า ผู้ออกบัตร เลขบัตรเดิม หมายเหตุ (แสดงเฉพาะช่องที่มีข้อมูล)</span></li>
+          <li><span><b>ปุ่มโทรศัพท์</b> สีกรมท่า แตะเพื่อโทรออก</span></li>
+          <li><span><b>ประวัติการกระทำผิด</b> ของบัตรนี้ สีแดง = ยังไม่ปิดเรื่อง สีเขียว = ปิดเรื่องแล้ว</span></li>
+          <li><span><b>แก้ไขข้อมูลบัตร</b> หรือ <b>ลงทะเบียนรถกับบัตรนี้</b> (หน้า 1.6) และ <b>บันทึกการกระทำผิด</b> (หน้า 1.7)</span></li></ul>
+      </div>
+    </div>
+    <div class="callout"><b>เปิดแถวนี้ใน Google Sheets</b> ใต้ปุ่มแก้ไข ใช้ได้เฉพาะผู้ที่ได้รับสิทธิ์เข้าชีตโดยตรง งานประจำวันทั้งหมดทำในแอปได้</div>
+    <div class="callout navy">ทุกครั้งที่เปิดบัตร ระบบบันทึกชื่อผู้เปิดและเวลาในแท็บ Access</div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 1 สำนักงานนิติฯ</span><span>1.5 / 9</span></div>
+</section>
+<section class="page " data-part="office">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">1.6 · REGISTER &amp; EDIT</div><h2>ลงทะเบียน<span>และแก้ไขบัตร</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/jeed/notice.webp" alt="จี๊ด"></div>
+    <p class="lead">บัตรทุกใบมีอยู่ในทะเบียนแล้วในสถานะ <b>ยังไม่ออก</b> การลงทะเบียนคือการผูกรถเข้ากับบัตรใบนั้นในแอป ไม่ต้องเปิด Google Sheets</p>
+    <div class="shots" style="grid-template-columns:repeat(3,50mm);justify-content:center"><figure><div class="phone"><img src="img/of-reg-tag.webp" alt="บัตร CO003 สถานะยังไม่ออกบัตร พร้อมปุ่มลงทะเบียนรถกับบัตรนี้"></div><figcaption>สแกนบัตรเปล่า</figcaption></figure><figure><div class="phone"><img src="img/of-reg-form.webp" alt="ฟอร์มลงทะเบียนรถ ส่วนสถานะและผู้พักอาศัย"></div><figcaption>กรอกข้อมูล</figcaption></figure><figure><div class="phone"><img src="img/of-reg-bottom.webp" alt="ส่วนถ่ายรูปรถ ช่องติ๊กยืนยัน และช่อง PIN"></div><figcaption>ถ่ายรูปและยืนยัน</figcaption></figure></div>
+    <ol class="steps">
+      <li><span>สแกนบัตรที่จะมอบให้ (สถานะ ยังไม่ออกบัตร) แล้วแตะ <b>ลงทะเบียนรถกับบัตรนี้</b></span></li>
+      <li><span>แอปกรอกให้เอง: สถานะ <b>ใช้งาน</b> วันที่ออกบัตร = วันนี้ ผู้ออกบัตร = ชื่อท่าน และบัตรเจ้าของร่วมได้วันหมดอายุ 31 ธ.ค. 70</span></li>
+      <li><span>กรอก <b>ทะเบียนรถ เลขห้อง โทรศัพท์</b> (จำเป็น) และข้อมูลรถอื่น บัตรผู้เช่าต้องกรอก<b>วันหมดอายุบัตร</b> พิมพ์วันที่แบบ 31 ธ.ค. 70 หรือ 31/12/70</span></li>
+      <li><span>แตะ <b>ถ่ายรูปรถ</b> ด้านหน้าหรือด้านหลัง ให้เห็นป้ายทะเบียนชัด (จำเป็นเมื่อลงทะเบียนใหม่) แอปย่อขนาดรูปให้เอง</span></li>
+      <li><span>ติ๊กยืนยันความถูกต้อง ใส่ PIN ของท่านอีกครั้ง แล้วแตะ <b>บันทึกลง Google Sheets</b></span></li>
+      <li class="done"><span>ขึ้นข้อความ <b>บันทึกแล้ว · แถว …</b> แล้วกลับหน้าบัตรเอง ทุกช่องที่เปลี่ยนถูกบันทึกแบบ ก่อน → หลัง พร้อมชื่อผู้แก้ไข</span></li>
+    </ol>
+    <div class="grid2">
+      <div class="card"><h3>รถคันที่ 2 ของห้อง</h3><p>เลือก <b>รถคันที่ = 2</b> จะมีช่อง <b>ค่าธรรมเนียมรถคันที่ 2 ชำระถึง</b> ถ้าช่องนี้ว่างหรือเลยวันที่กรอก หน้าบัตรจะขึ้นป้ายค้างชำระให้ รปภ. เห็น</p></div>
+      <div class="card hot"><h3>แก้ไขภายหลัง</h3><p>ใช้ปุ่ม <b>แก้ไขข้อมูลบัตร</b> ฟอร์มเดียวกัน ถ่ายรูปใหม่ได้ แจ้งหาย ยกเลิก หรือรับบัตรคืน ให้เปลี่ยน<b>สถานะบัตร</b>เป็น สูญหาย ยกเลิก หรือ คืนแล้ว</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 1 สำนักงานนิติฯ</span><span>1.6 / 9</span></div>
+</section>
+<section class="page " data-part="office">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">1.7 · VIOLATIONS</div><h2>บันทึกและ<span>ติดตามการกระทำผิด</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/khaitoon/notice.webp" alt="ไข่ตุ๋น"></div>
+    <div class="shots" style="grid-template-columns:repeat(3,50mm);justify-content:center"><figure><div class="phone"><img src="img/of-vio-form.webp" alt="ฟอร์มบันทึกการกระทำผิด"></div><figcaption>เลือกประเภทและรายละเอียด</figcaption></figure><figure><div class="phone"><img src="img/of-vio-confirm.webp" alt="ส่วนยืนยันของฟอร์มบันทึกการกระทำผิด"></div><figcaption>ยืนยันด้วย PIN</figcaption></figure><figure><div class="phone"><img src="img/of-history.webp" alt="หน้าประวัติการกระทำผิดทั้งหมด"></div><figcaption>ประวัติทั้งหมด</figcaption></figure></div>
+    <div class="grid2">
+      <div style="display:flex;flex-direction:column;gap:2.5mm"><h3>บันทึก</h3>
+        <ol class="steps">
+          <li><span>เปิดบัตร แตะ <b>บันทึกการกระทำผิด</b></span></li>
+          <li><span>เลือกประเภท ถ้าเลือก <b>อื่น ๆ</b> ต้องกรอกรายละเอียด</span></li>
+          <li><span>วัน-เวลา เว้นว่างได้ (ใช้เวลาที่บันทึก) ผู้รายงาน เว้นว่างได้ (ใช้ชื่อท่าน)</span></li>
+          <li><span>ติ๊กยืนยัน ใส่ PIN แล้วบันทึก ระบบออกเลขเรื่อง V0001, V0002 …</span></li>
+        </ol>
+        <h3 style="margin-top:1.5mm">ติดตาม</h3>
+        <p>หน้าแรก → <b>ประวัติการกระทำผิดทั้งหมด</b> (ปุ่มบอกจำนวนเรื่องค้าง) กรอง <b>ยังไม่ปิดเรื่อง / ปิดเรื่องแล้ว / ทั้งหมด</b> และตามประเภท รายการล่าสุดอยู่บนสุด แตะเพื่อเปิดบัตร</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2.5mm">
+        <div class="card"><h3>ประเภทการกระทำผิด</h3><ul class="dia"><li><span>จอดในที่คนพิการเกินเวลาที่กำหนด</span></li><li><span>จอดในที่คนพิการโดยไม่ได้รับอนุญาต</span></li><li><span>ขับยานพาหนะย้อนศร</span></li><li><span>จอดรถในที่ห้ามจอด</span></li><li><span>จอดรถกีดขวางผู้อื่น</span></li><li><span>จอดรถในช่องจอด EV โดยไม่ได้ชาร์จ</span></li><li><span>จอดรถในช่อง EV ค้างไว้เกิน 15 นาทีหลังชาร์จหยุด</span></li><li><span>อื่น ๆ (โปรดระบุ)</span></li></ul></div>
+        <div class="callout"><b>การปิดเรื่อง</b> แอปบันทึกได้เฉพาะเรื่องใหม่ ถ้าจะปิดเรื่องที่บันทึกไว้แล้ว ให้แก้ช่อง resolved (ปิดเรื่องแล้ว) ของเรื่องนั้นเป็น <b>ใช่</b> ในแท็บ Violations ของ Google Sheets แล้วแตะ <b>โหลดใหม่</b> ในแอป</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 1 สำนักงานนิติฯ</span><span>1.7 / 9</span></div>
+</section>
+<section class="page " data-part="office">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">1.8 · USERS · สำนักงานนิติฯ</div><h2>จัดการ<span>ผู้ใช้</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/makuea-mangkood/hero.webp" alt="มะเขือ & มังคุด"></div>
+    <div class="shots" style="grid-template-columns:repeat(2,50mm) 62mm;justify-content:center"><figure><div class="phone"><img src="img/of-users-form.webp" alt="หน้าจัดการผู้ใช้ ช่อง PIN ของท่านและฟอร์มเชิญผู้ใช้ใหม่"></div><figcaption>สร้างคำเชิญ</figcaption></figure><figure><div class="phone"><img src="img/of-invite.webp" alt="คำเชิญพร้อม QR และรหัส 6 ตัว"></div><figcaption>QR คำเชิญ</figcaption></figure><figure><div class="crop"><img src="img/of-users-list.webp" alt="รายชื่อผู้ใช้ พร้อมปุ่มรีเซ็ต PIN และระงับ"></div><figcaption>รายชื่อผู้ใช้</figcaption></figure></div>
+    <div class="grid2">
+      <div style="display:flex;flex-direction:column;gap:2.5mm"><h3>เชิญผู้ใช้ใหม่</h3>
+        <ol class="steps">
+          <li><span>หน้าแรก → <b>จัดการผู้ใช้และรหัส PIN</b> ใส่ PIN ของท่านในช่องด้านบน ใช้ยืนยันทุกรายการในหน้านี้</span></li>
+          <li><span>กรอก<b>ชื่อ-สกุล</b> เลือก<b>บทบาท</b> แล้วแตะ <b>สร้างคำเชิญ</b></span></li>
+          <li><span>ให้ผู้ใช้ใหม่<b>สแกน QR</b> จากโทรศัพท์ของท่าน หรือแตะ <b>ส่งทาง LINE / แชร์</b> คำเชิญใช้ได้ครั้งเดียวภายใน 48 ชั่วโมง</span></li>
+          <li><span>รายชื่อขึ้น <b>รอตั้ง PIN</b> จนกว่าผู้ใช้ตั้ง PIN จึงได้รหัสผู้ใช้ (OF = สำนักงาน · CM = กรรมการ · GD = รปภ. ตามด้วยเลขลำดับ)</span></li>
+        </ol></div>
+      <div style="display:flex;flex-direction:column;gap:2.5mm">
+        <table><thead><tr><th>ปุ่ม</th><th>ใช้เมื่อ</th></tr></thead><tbody>
+          <tr><td style="white-space:nowrap"><b>รีเซ็ต PIN</b></td><td>ลืม PIN หรือเปลี่ยนโทรศัพท์ PIN เดิมใช้ไม่ได้ทันที แล้วได้คำเชิญใหม่ส่งให้ผู้ใช้</td></tr>
+          <tr><td style="white-space:nowrap"><b>ระงับ / เปิดใช้</b></td><td>ลาออกหรือย้ายงาน ระงับแล้วเข้าใช้ไม่ได้ตั้งแต่การแตะครั้งถัดไป ประวัติยังอยู่ครบ ระงับบัญชีของตัวเองไม่ได้</td></tr>
+          <tr><td style="white-space:nowrap"><b>ส่งคำเชิญใหม่</b></td><td>คำเชิญเดิมหมดอายุหรือหาย รหัสเดิมใช้ไม่ได้อีก</td></tr>
+          <tr><td style="white-space:nowrap"><b>ยกเลิก</b></td><td>ลบคำเชิญที่ยังไม่มีผู้ใช้ตั้ง PIN</td></tr></tbody></table>
+        <div class="callout">สร้างคำเชิญจากแอปที่เปิดผ่าน <b>phemarajata.github.io</b> เท่านั้น ลิงก์ในคำเชิญจึงจะถูกต้อง สำนักงานไม่ทราบ PIN ของผู้ใช้คนใด ทุกการเชิญ รีเซ็ต และระงับถูกบันทึกในแท็บ Access</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 1 สำนักงานนิติฯ</span><span>1.8 / 9</span></div>
+</section>
+<section class="page " data-part="office">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">1.9 · FAQ</div><h2>คำถาม<span>ที่พบบ่อย</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/jujee/hero.webp" alt="จู๋จี๋"></div>
+    <div class="grid2" style="align-items:start"><div class="callout"><b>กล้องไม่เปิด</b><br>ตรวจว่าเปิดผ่านลิงก์ github.io และอนุญาตกล้องแล้ว: ตั้งค่า → Chrome หรือ Safari → กล้อง จากนั้นโหลดหน้าใหม่ หรือพิมพ์เลขบัตรแทน</div><div class="callout"><b>สแกน QR ไม่ติด</b><br>เปลี่ยนมุมเพื่อลดแสงสะท้อนบนกระจก หรือพิมพ์เลขบัตรที่พิมพ์อยู่บนบัตรแทน</div><div class="callout"><b>ขึ้นว่า ไม่พบเลขบัตรในทะเบียน</b><br>บัตรอาจไม่ใช่ของโครงการหรือพิมพ์เลขผิด ตรวจอักษร CO / CR / MO / MR และเลข 3 หลัก</div><div class="callout"><b>ลืม PIN</b><br>ให้เจ้าหน้าที่สำนักงานอีกคนกด รีเซ็ต PIN ให้ท่านที่หน้าจัดการผู้ใช้ แล้วรับคำเชิญใหม่</div><div class="callout"><b>ขึ้นว่า ระบบหยุดรับชั่วคราว 15 นาที</b><br>มีการใส่ PIN หรือรหัสเชิญผิดรวม 10 ครั้ง รอ 15 นาทีแล้วลองใหม่ หากเกิดบ่อยให้แจ้งสำนักงาน</div><div class="callout"><b>ถูกออกจากระบบเอง</b><br>ไม่มีการใช้งาน 5 นาที หรือใช้ต่อเนื่องครบ 12 ชั่วโมง ใส่ PIN เพื่อเข้าใหม่ได้ทันที</div><div class="callout"><b>บันทึกไม่สำเร็จ หรือหมดเวลา</b><br>ข้อมูลในฟอร์มยังอยู่ ใส่ PIN แล้วกดบันทึกอีกครั้ง ตรวจว่าจุดสถานะเป็นสีเขียว</div><div class="callout"><b>รูปสัตว์บนหน้าจอเปลี่ยนทุกวัน</b><br>เป็นสัตว์เลี้ยงจริงของคณะกรรมการ 7 ตัว ผลัดกันขึ้นจอวันละชุด ไม่มีผลต่อการใช้งาน: ไข่ตุ๋น จี๊ด และตู้ม ของคุณเฟิร์น · มะเขือ &amp; มังคุด ของคุณเบนซ์ · Raptor ของคุณอาย · จู๋จี๋ และเหมียว ของคุณพีระ</div></div>
+    <div class="grid2" style="grid-template-columns:1.25fr 1fr">
+      <div class="panel"><div class="kicker">PRIVACY</div><ul class="dia">
+        <li><span>ข้อมูลอยู่ในชีตส่วนตัวของนิติบุคคล เปิดได้ผ่านแอปหลังใส่ PIN เท่านั้น</span></li>
+        <li><span>ออกจากระบบแล้ว ข้อมูลทะเบียนไม่ค้างในโทรศัพท์</span></li>
+        <li><span>ทุกการเปิดดู แก้ไข และดูรูป ถูกบันทึกชื่อผู้ใช้และเวลา</span></li>
+        <li><span>ใช้ข้อมูลเพื่อดูแลที่จอดรถเท่านั้น</span></li></ul></div>
+      <div class="card"><div class="kicker" style="color:var(--muted)">CONTACT</div><h3>สำนักงานนิติบุคคลอาคารชุด</h3>
+        <div class="mono" style="font-size:15pt;font-weight:700;color:var(--orange-ink)">065-472-1182</div>
+        <div class="mono" style="font-size:9.5pt;word-break:break-all">juristic.brixtonphahol50@gmail.com</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 1 สำนักงานนิติฯ</span><span>1.9 / 9</span></div>
+</section>
+<section class="page " data-part="committee">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">ส่วนที่ 2 · COMMITTEE</div><h2>คู่มือสำหรับ<span>กรรมการ</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/meow/hello.webp" alt="เหมียว"></div>
+    <p class="lead">กรรมการเห็นข้อมูลบัตรครบทุกช่องเหมือนสำนักงานนิติฯ ค้นหาทะเบียนได้ และติดตามประวัติการกระทำผิดทั้งหมด แต่แก้ไขข้อมูลไม่ได้ หากพบข้อมูลผิดให้แจ้งสำนักงานนิติฯ เพื่อแก้ในระบบ</p>
+    <table><thead><tr><th>สิ่งที่ทำได้ในแอป</th><th class="c">รปภ.</th><th class="c">สำนักงานนิติฯ</th><th class="c me">กรรมการ</th></tr></thead><tbody><tr><td>สแกน QR หรือพิมพ์เลขบัตร</td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>สถานะบัตร วันหมดอายุ สิทธิ์ช่องจอด รูปรถ</td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ทะเบียนรถ ยี่ห้อ รุ่น สี เลขห้อง เบอร์โทร</td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ชื่อ บ้านเลขที่ LINE ID เบอร์สำรอง หมายเหตุ และประวัติการออกบัตร</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ค้นหาด้วยทะเบียนรถ เลขห้อง หรือชื่อ</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>การกระทำผิดของบัตรที่เปิด</td><td class="c"><span style="font-size:9.5pt">จำนวนครั้ง</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ประวัติการกระทำผิดทั้งหมด</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ลงทะเบียนรถ แก้ไขข้อมูลบัตร ถ่ายรูปรถ</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td></tr><tr><td>บันทึกการกระทำผิด</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td></tr><tr><td>เชิญผู้ใช้ รีเซ็ต PIN ระงับผู้ใช้</td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c me"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td></tr></tbody></table>
+    <div class="grid2" style="align-items:end">
+      <div><div class="kicker" style="color:var(--muted);margin-bottom:2mm">ในส่วนนี้</div><ol class="toc"><li><span>2.1</span>ภาพรวมและสิทธิ์ของท่าน</li><li><span>2.2</span>เริ่มใช้งานและเข้าสู่ระบบ</li><li><span>2.3</span>สแกนบัตรและค้นหา</li><li><span>2.4</span>อ่านสถานะบัตร</li><li><span>2.5</span>ข้อมูลบัตร</li><li><span>2.6</span>คำถามที่พบบ่อย</li></ol></div>
+      <div class="tip"><div><h3>เหมียว ฝากบอก</h3>ข้อมูลผู้พักอาศัยเป็นข้อมูลส่วนบุคคล ใช้เพื่อดูแลที่จอดรถเท่านั้น ห้ามถ่ายภาพหน้าจอส่งต่อ ทุกครั้งที่เปิดดูบัตร ระบบบันทึกชื่อของท่านและเวลาไว้</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 2 กรรมการ</span><span>2.1 / 6</span></div>
+</section>
+<section class="page " data-part="committee">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">2.2 · GETTING STARTED</div><h2>เริ่มใช้งาน<span>และเข้าสู่ระบบ</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/raptor/hero.webp" alt="Raptor"></div>
+    <p class="lead">ผู้ใช้ทุกคนเริ่มจาก<b>คำเชิญ</b> สำนักงานนิติฯ เป็นผู้สร้างคำเชิญให้ คำเชิญมีรหัส 6 ตัว ใช้ได้ครั้งเดียวภายใน 48 ชั่วโมง ท่านตั้ง PIN 4 หลักเอง ไม่มีใครรู้ PIN ของท่าน และไม่ต้องมีบัญชี Google</p>
+    <div class="split l2">
+      <div class="shots c2"><figure><div class="phone"><img src="img/cm-login.webp" alt="หน้าเข้าสู่ระบบ มีช่อง PIN และปุ่มเข้าใช้งาน"></div><figcaption>หน้าเข้าสู่ระบบ</figcaption></figure><figure><div class="phone"><img src="img/cm-redeem.webp" alt="หน้าตั้ง PIN จากคำเชิญ มีช่องรหัสเชิญและช่อง PIN สองช่อง"></div><figcaption>หน้าตั้ง PIN จากคำเชิญ</figcaption></figure></div>
+      <div style="display:flex;flex-direction:column;gap:3mm">
+        <h3>ครั้งแรก: รับคำเชิญ</h3>
+        <ol class="steps">
+          <li><span>เปิด<b>ลิงก์คำเชิญ</b>ที่ได้รับทาง LINE หน้าตั้ง PIN จะเปิดพร้อมรหัสเชิญให้</span></li>
+          <li><span>หรือเปิดแอป แตะ <b>ผู้ใช้ใหม่ / ได้รับคำเชิญ</b> แล้วแตะ <b>สแกน QR คำเชิญ</b> จากโทรศัพท์ของผู้เชิญ หรือพิมพ์รหัส 6 ตัว</span></li>
+          <li><span>ตั้ง <b>PIN 4 หลัก</b> พิมพ์ทั้งสองช่องให้ตรงกัน PIN ต้องไม่ซ้ำกับผู้ใช้คนอื่น</span></li>
+          <li><span>แตะ <b>ตั้ง PIN และเข้าใช้งาน</b> แอปเข้าสู่ระบบให้ทันที และแสดงรหัสผู้ใช้ของท่าน เช่น <span class="mono">CM02</span></span></li>
+        </ol>
+        <h3 style="margin-top:2mm">ครั้งต่อไป</h3>
+        <ol class="steps">
+          <li><span>เปิด <b>phemarajata.github.io/bxt50-tags</b> พิมพ์ PIN แล้วแตะ <b>เข้าใช้งาน</b> แอปรู้เองว่าท่านเป็นกรรมการ</span></li>
+          <li><span>ชื่อของท่านอยู่มุมขวาบน แตะชื่อเพื่อ<b>ออกจากระบบ</b>ทุกครั้งที่เลิกใช้งาน</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="grid3">
+      <div class="stat"><span class="n">5 นาที</span>ไม่มีการใช้งาน 5 นาที แอปออกจากระบบเอง ถ้าปิดหน้าแอปแล้วเปิดใหม่ภายใน 5 นาที ไม่ต้องใส่ PIN ใหม่</div>
+      <div class="stat"><span class="n">12 ชม.</span>ใช้งานต่อเนื่องได้สูงสุด 12 ชั่วโมงต่อการเข้าสู่ระบบหนึ่งครั้ง จากนั้นต้องใส่ PIN ใหม่</div>
+      <div class="stat"><span class="n">10 ครั้ง</span>ใส่ PIN หรือรหัสเชิญผิดรวม 10 ครั้ง (นับทุกเครื่องรวมกัน) ระบบหยุดรับการเข้าสู่ระบบ 15 นาที</div>
+    </div>
+    <div class="callout navy"><b>จุดสถานะใต้ปุ่ม</b> สีเขียว = เชื่อมต่อฐานข้อมูลแล้ว · สีเหลือง = กำลังตรวจสอบ · สีแดง = ติดต่อไม่ได้ ให้แตะ <b>ตรวจสอบอีกครั้ง</b> หากเห็นกล่องสีเหลือง <b>โหมดทดลอง</b> แปลว่ายังเชื่อมต่อฐานข้อมูลไม่ได้ ข้อมูลที่เห็นเป็นตัวอย่าง ห้ามใช้ตัดสินสิทธิ์จอดรถ</div>
+    <div class="callout"><b>เพิ่มไอคอนบนหน้าจอโทรศัพท์</b> Android (Chrome): เมนู ⋮ → เพิ่มลงในหน้าจอหลัก · iPhone (Safari): ปุ่มแชร์ → เพิ่มไปยังหน้าจอโฮม หากกล้องไม่เปิดจากไอคอน ให้เปิดผ่านเบราว์เซอร์แทน</div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 2 กรรมการ</span><span>2.2 / 6</span></div>
+</section>
+<section class="page " data-part="committee">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">2.3 · SCAN</div><h2>สแกนบัตร<span>และค้นหา</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/toom/hero.webp" alt="ตู้ม"></div>
+    <div class="split l1">
+      <div class="shots"><figure><div class="phone"><img src="img/cm-home.webp" alt="หน้าแรก มีกรอบสแกน QR ช่องพิมพ์เลขบัตร และช่องค้นหา"></div><figcaption>หน้าแรกหลังเข้าสู่ระบบ</figcaption></figure></div>
+      <div style="display:flex;flex-direction:column;gap:3mm">
+        <h3>สแกน QR บนบัตร</h3>
+        <ol class="steps">
+          <li><span>แตะกรอบสีกรมท่า <b>แตะเพื่อเปิดกล้องสแกน QR</b> ครั้งแรกให้กด<b>อนุญาต</b>การใช้กล้อง</span></li>
+          <li><span>เล็ง QR บนบัตรให้อยู่ในกรอบ ห่างประมาณ 15–25 ซม. บัตรรถยนต์ติดด้านในกระจกหน้า บัตรจักรยานยนต์ติดบนตัวรถ ผลแสดงทันที</span></li>
+          <li><span>ถ้า QR อ่านไม่ได้ (แสงสะท้อน ฟิล์มเข้ม) ให้<b>พิมพ์เลขบัตร</b>ที่พิมพ์อยู่บนบัตร เช่น CO001 แล้วแตะ <b>ค้นหา</b> เว้นวรรคหรือพิมพ์ตัวเล็กก็ได้</span></li>
+        </ol>
+        <table><thead><tr><th>อักษรนำ</th><th>ประเภทบัตร</th></tr></thead><tbody>
+          <tr><td class="mono">CO</td><td>รถยนต์ · เจ้าของร่วม</td></tr><tr><td class="mono">CR</td><td>รถยนต์ · ผู้เช่า</td></tr>
+          <tr><td class="mono">MO</td><td>จักรยานยนต์ · เจ้าของร่วม</td></tr><tr><td class="mono">MR</td><td>จักรยานยนต์ · ผู้เช่า</td></tr></tbody></table>
+        <p class="small">ตามด้วยเลข 3 หลัก ถ้าขึ้น <b>ไม่พบเลขบัตร … ในทะเบียน</b> แปลว่าเลขผิดหรือไม่ใช่บัตรของโครงการ</p>
+        
+        <h3>ค้นหาในทะเบียน</h3>
+        <p>พิมพ์บางส่วนของ<b>ทะเบียนรถ เลขห้อง บ้านเลขที่ ชื่อ หรือเลขบัตร</b> ในช่อง SEARCH REGISTER ผลแสดงได้สูงสุด 8 รายการพร้อมสถานะบัตร แตะรายการเพื่อเปิด</p>
+        <h3>ปุ่มบนหน้าแรก</h3>
+        <ul class="dia"><li><span><b>ประวัติการกระทำผิดทั้งหมด</b> บอกจำนวนเรื่องที่ยังค้าง (หน้า 2.5)</span></li></ul>
+      </div>
+    </div>
+    <div class="callout"><b>ข้อมูลอัปเดตเมื่อไร</b> แอปโหลดทะเบียนทั้งหมดครั้งเดียวตอนเข้าสู่ระบบ ถ้าเพิ่งมีการลงทะเบียนหรือแก้ไขบัตรหลังจากนั้น ให้แตะ <b>โหลดใหม่</b> ที่ด้านล่างหน้าแรกก่อนสแกน บรรทัดล่างสุดบอกจำนวนบัตรที่โหลดและเวลาออกจากระบบอัตโนมัติ</div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 2 กรรมการ</span><span>2.3 / 6</span></div>
+</section>
+<section class="page " data-part="committee">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">2.4 · TAG STATUS</div><h2>อ่าน<span>สถานะบัตร</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/jeed/notice.webp" alt="จี๊ด"></div>
+    <p class="lead">สถานะอยู่บนสุดของหน้าบัตร แถบสีด้านบนการ์ดและป้ายมุมขวาบอกผลทันที ใต้เลขบัตรบอกวันหมดอายุหรือเหตุผล</p>
+    <div class="shots c2" style="max-width:150mm;margin:0 auto;width:100%"><figure><div class="crop"><img src="img/cm-st-valid.webp" alt="การ์ดสถานะ บัตรใช้ได้"></div><figcaption><span class="s-ok">● บัตรใช้ได้</span></figcaption></figure><figure><div class="crop"><img src="img/cm-st-expired.webp" alt="การ์ดสถานะ บัตรหมดอายุ"></div><figcaption><span class="s-bad">● บัตรหมดอายุ</span></figcaption></figure><figure><div class="crop"><img src="img/cm-st-lost.webp" alt="การ์ดสถานะ แจ้งหาย"></div><figcaption><span class="s-bad">● แจ้งหาย</span></figcaption></figure><figure><div class="crop"><img src="img/cm-st-unissued.webp" alt="การ์ดสถานะ ยังไม่ออกบัตร"></div><figcaption><span class="s-none">● ยังไม่ออกบัตร</span></figcaption></figure></div><table><thead><tr><th>สถานะอื่น</th><th>ความหมาย</th></tr></thead><tbody>
+          <tr><td class="key s-warn">● บัตรใกล้หมดอายุ</td><td>ยังใช้ได้ เหลือไม่เกิน 30 วัน</td></tr>
+          <tr><td class="key s-bad">● ยกเลิก / คืนบัตรแล้ว</td><td>ไม่มีสิทธิ์จอดในโครงการ</td></tr>
+          <tr><td class="key s-bad">▣ รถคันที่ 2 ค้างชำระ</td><td>ค่าธรรมเนียมรายปีของรถคันที่ 2 เลยกำหนด</td></tr></tbody></table><h3>แอปตัดสินสถานะอย่างไร (ตามลำดับ)</h3>
+        <ol class="steps">
+          <li><span>สถานะในทะเบียนเป็น <b>ยังไม่ออก</b> → <span class="s-none">ยังไม่ออกบัตร</span></span></li>
+          <li><span>เป็น <b>สูญหาย</b> → <span class="s-bad">แจ้งหาย</span></span></li>
+          <li><span>เป็น <b>ยกเลิก</b> หรือ <b>คืนแล้ว</b> → <span class="s-bad">ยกเลิกแล้ว / คืนบัตรแล้ว</span></span></li>
+          <li><span>นอกนั้นดู<b>วันหมดอายุบัตร</b>ในทะเบียน ถ้าไม่ได้กรอกไว้ ถือว่าหมดอายุ 31 ธ.ค. 2570 (สิ้นรอบบัตรเจ้าของร่วม)</span></li>
+          <li><span>เลยวันหมดอายุแล้ว → <span class="s-bad">บัตรหมดอายุ</span> · เหลือไม่เกิน 30 วัน → <span class="s-warn">บัตรใกล้หมดอายุ</span> (ยังใช้ได้) · มากกว่านั้น → <span class="s-ok">บัตรใช้ได้</span></span></li>
+        </ol>
+        <p class="small">ป้าย <b>รถคันที่ 2 · ค้างชำระค่าธรรมเนียม</b> แสดงแยกจากสถานะบัตร เมื่อรถเป็นคันที่ 2 ของห้อง และช่อง “ชำระถึง” ว่างหรือเลยวันที่กรอกไว้แล้ว</p>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 2 กรรมการ</span><span>2.4 / 6</span></div>
+</section>
+<section class="page " data-part="committee">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">2.5 · TAG RECORD &amp; VIOLATIONS</div><h2>ข้อมูลบัตร<span>และการกระทำผิด</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/khaitoon/hero.webp" alt="ไข่ตุ๋น"></div>
+    <div class="shots" style="grid-template-columns:repeat(3,50mm);justify-content:center"><figure><div class="phone"><img src="img/cm-rec-top.webp" alt="หน้าบัตรแบบเต็ม ส่วนบน"></div><figcaption>ส่วนบนของหน้าบัตร</figcaption></figure><figure><div class="phone"><img src="img/cm-rec-bottom.webp" alt="หน้าบัตรแบบเต็ม ส่วนล่าง พร้อมประวัติการกระทำผิด"></div><figcaption>ข้อมูลเพิ่มเติมและประวัติ</figcaption></figure><figure><div class="phone"><img src="img/cm-history.webp" alt="หน้าประวัติการกระทำผิดทั้งหมด พร้อมตัวกรอง"></div><figcaption>ประวัติการกระทำผิดทั้งหมด</figcaption></figure></div>
+    <div class="grid2">
+      <div style="display:flex;flex-direction:column;gap:2mm"><h3>หน้าบัตร</h3><ul class="dia">
+          <li><span><b>การ์ดสถานะ</b> เลขบัตร ประเภท สถานะ และวันหมดอายุ</span></li>
+          <li><span><b>ช่องสิทธิ์</b> รถยนต์แสดงช่องผู้พิการ จักรยานยนต์แสดงช่องบิ๊กไบค์ (พื้นสีกรมท่า = อนุญาต) และช่องรถไฟฟ้า EV (พื้นสีเขียว = ใช้ช่องชาร์จได้)</span></li>
+          <li><span><b>รูปรถ</b> โหลดตามมาหลังเปิดบัตร ถ้าลงทะเบียนพร้อมรูป</span></li>
+          <li><span><b>ข้อมูลรถและผู้ลงทะเบียน</b> แสดงทุกช่องที่มีข้อมูล รวมชื่อ LINE ID และหมายเหตุ</span></li>
+          <li><span><b>ประวัติการกระทำผิด</b> ของบัตรนี้ สีแดง = ยังไม่ปิดเรื่อง สีเขียว = ปิดเรื่องแล้ว</span></li></ul></div>
+      <div style="display:flex;flex-direction:column;gap:2mm"><h3>ประวัติการกระทำผิดทั้งหมด</h3>
+        <p>หน้าแรก → <b>ประวัติการกระทำผิดทั้งหมด</b> กรอง <b>ยังไม่ปิดเรื่อง / ปิดเรื่องแล้ว / ทั้งหมด</b> และตามประเภท รายการล่าสุดอยู่บนสุด แตะรายการเพื่อเปิดบัตรนั้น</p>
+        <div class="callout"><b>กรรมการดูได้อย่างเดียว</b> หน้าบัตรไม่มีปุ่มแก้ไข และระบบปฏิเสธการแก้ไขจากบทบาทอื่นนอกจากสำนักงานนิติฯ หากพบข้อมูลผิด แจ้งสำนักงานพร้อมเลขบัตร</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 2 กรรมการ</span><span>2.5 / 6</span></div>
+</section>
+<section class="page " data-part="committee">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">2.6 · FAQ</div><h2>คำถาม<span>ที่พบบ่อย</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/makuea-mangkood/hero.webp" alt="มะเขือ & มังคุด"></div>
+    <div class="grid2" style="align-items:start"><div class="callout"><b>กล้องไม่เปิด</b><br>ตรวจว่าเปิดผ่านลิงก์ github.io และอนุญาตกล้องแล้ว: ตั้งค่า → Chrome หรือ Safari → กล้อง จากนั้นโหลดหน้าใหม่ หรือพิมพ์เลขบัตรแทน</div><div class="callout"><b>สแกน QR ไม่ติด</b><br>เปลี่ยนมุมเพื่อลดแสงสะท้อนบนกระจก หรือพิมพ์เลขบัตรที่พิมพ์อยู่บนบัตรแทน</div><div class="callout"><b>ขึ้นว่า ไม่พบเลขบัตรในทะเบียน</b><br>บัตรอาจไม่ใช่ของโครงการหรือพิมพ์เลขผิด ตรวจอักษร CO / CR / MO / MR และเลข 3 หลัก</div><div class="callout"><b>ลืม PIN</b><br>แจ้งสำนักงานนิติฯ ให้กด รีเซ็ต PIN แล้วรับคำเชิญใหม่ ตั้ง PIN ใหม่ด้วยตนเอง</div><div class="callout"><b>ขึ้นว่า ระบบหยุดรับชั่วคราว 15 นาที</b><br>มีการใส่ PIN หรือรหัสเชิญผิดรวม 10 ครั้ง รอ 15 นาทีแล้วลองใหม่ หากเกิดบ่อยให้แจ้งสำนักงาน</div><div class="callout"><b>ถูกออกจากระบบเอง</b><br>ไม่มีการใช้งาน 5 นาที หรือใช้ต่อเนื่องครบ 12 ชั่วโมง ใส่ PIN เพื่อเข้าใหม่ได้ทันที</div><div class="callout"><b>พบข้อมูลในบัตรไม่ถูกต้อง</b><br>แจ้งสำนักงานนิติฯ พร้อมเลขบัตรและสิ่งที่ต้องแก้ กรรมการแก้ไขในแอปไม่ได้</div><div class="callout"><b>รูปสัตว์บนหน้าจอเปลี่ยนทุกวัน</b><br>เป็นสัตว์เลี้ยงจริงของคณะกรรมการ 7 ตัว ผลัดกันขึ้นจอวันละชุด ไม่มีผลต่อการใช้งาน: ไข่ตุ๋น จี๊ด และตู้ม ของคุณเฟิร์น · มะเขือ &amp; มังคุด ของคุณเบนซ์ · Raptor ของคุณอาย · จู๋จี๋ และเหมียว ของคุณพีระ</div></div>
+    <div class="grid2" style="grid-template-columns:1.25fr 1fr">
+      <div class="panel"><div class="kicker">PRIVACY</div><ul class="dia">
+        <li><span>ข้อมูลอยู่ในชีตส่วนตัวของนิติบุคคล เปิดได้ผ่านแอปหลังใส่ PIN เท่านั้น</span></li>
+        <li><span>ออกจากระบบแล้ว ข้อมูลทะเบียนไม่ค้างในโทรศัพท์</span></li>
+        <li><span>ทุกการเปิดดู แก้ไข และดูรูป ถูกบันทึกชื่อผู้ใช้และเวลา</span></li>
+        <li><span>ใช้ข้อมูลเพื่อดูแลที่จอดรถเท่านั้น</span></li></ul></div>
+      <div class="card"><div class="kicker" style="color:var(--muted)">CONTACT</div><h3>สำนักงานนิติบุคคลอาคารชุด</h3>
+        <div class="mono" style="font-size:15pt;font-weight:700;color:var(--orange-ink)">065-472-1182</div>
+        <div class="mono" style="font-size:9.5pt;word-break:break-all">juristic.brixtonphahol50@gmail.com</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 2 กรรมการ</span><span>2.6 / 6</span></div>
+</section>
+<section class="page " data-part="guard">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">ส่วนที่ 3 · GUARD</div><h2>คู่มือสำหรับ<span>รปภ.</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/jujee/hello.webp" alt="จู๋จี๋"></div>
+    <p class="lead">รปภ. ใช้แอปที่ป้อมเพื่อสแกนบัตรบนรถ ดูว่าบัตรใช้ได้หรือไม่ รถมีสิทธิ์ช่องจอดใด และโทรหาผู้ลงทะเบียนรถได้ทันที ข้อมูลส่วนตัวบางอย่าง เช่น ชื่อ บ้านเลขที่ และ LINE ID จะไม่ถูกส่งมาที่เครื่องของ รปภ.</p>
+    <table><thead><tr><th>สิ่งที่ทำได้ในแอป</th><th class="c me">รปภ.</th><th class="c">สำนักงานนิติฯ</th><th class="c">กรรมการ</th></tr></thead><tbody><tr><td>สแกน QR หรือพิมพ์เลขบัตร</td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>สถานะบัตร วันหมดอายุ สิทธิ์ช่องจอด รูปรถ</td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ทะเบียนรถ ยี่ห้อ รุ่น สี เลขห้อง เบอร์โทร</td><td class="c me"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ชื่อ บ้านเลขที่ LINE ID เบอร์สำรอง หมายเหตุ และประวัติการออกบัตร</td><td class="c me"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ค้นหาด้วยทะเบียนรถ เลขห้อง หรือชื่อ</td><td class="c me"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>การกระทำผิดของบัตรที่เปิด</td><td class="c me"><span style="font-size:9.5pt">จำนวนครั้ง</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ประวัติการกระทำผิดทั้งหมด</td><td class="c me"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td></tr><tr><td>ลงทะเบียนรถ แก้ไขข้อมูลบัตร ถ่ายรูปรถ</td><td class="c me"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td></tr><tr><td>บันทึกการกระทำผิด</td><td class="c me"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td></tr><tr><td>เชิญผู้ใช้ รีเซ็ต PIN ระงับผู้ใช้</td><td class="c me"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td><td class="c"><span class="yes" aria-hidden="true">●</span><span class="vh">ได้</span></td><td class="c"><span class="no" aria-hidden="true">—</span><span class="vh">ไม่ได้</span></td></tr></tbody></table>
+    <div class="grid2" style="align-items:end">
+      <div><div class="kicker" style="color:var(--muted);margin-bottom:2mm">ในส่วนนี้</div><ol class="toc"><li><span>3.1</span>ภาพรวมและสิทธิ์ของท่าน</li><li><span>3.2</span>เริ่มใช้งานและเข้าสู่ระบบ</li><li><span>3.3</span>สแกนบัตรและค้นหา</li><li><span>3.4</span>อ่านสถานะบัตร</li><li><span>3.5</span>ข้อมูลบัตร</li><li><span>3.6</span>คำถามที่พบบ่อย</li></ol></div>
+      <div class="tip"><div><h3>จู๋จี๋ ฝากบอก</h3>ข้อมูลผู้พักอาศัยเป็นข้อมูลส่วนบุคคล ใช้เพื่อดูแลที่จอดรถเท่านั้น ห้ามถ่ายภาพหน้าจอส่งต่อ ทุกครั้งที่เปิดดูบัตร ระบบบันทึกชื่อของท่านและเวลาไว้</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 3 รปภ.</span><span>3.1 / 6</span></div>
+</section>
+<section class="page " data-part="guard">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">3.2 · GETTING STARTED</div><h2>เริ่มใช้งาน<span>และเข้าสู่ระบบ</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/meow/notice.webp" alt="เหมียว"></div>
+    <p class="lead">ผู้ใช้ทุกคนเริ่มจาก<b>คำเชิญ</b> สำนักงานนิติฯ เป็นผู้สร้างคำเชิญให้ คำเชิญมีรหัส 6 ตัว ใช้ได้ครั้งเดียวภายใน 48 ชั่วโมง ท่านตั้ง PIN 4 หลักเอง ไม่มีใครรู้ PIN ของท่าน และไม่ต้องมีบัญชี Google</p>
+    <div class="split l2">
+      <div class="shots c2"><figure><div class="phone"><img src="img/gd-login.webp" alt="หน้าเข้าสู่ระบบ มีช่อง PIN และปุ่มเข้าใช้งาน"></div><figcaption>หน้าเข้าสู่ระบบ</figcaption></figure><figure><div class="phone"><img src="img/gd-redeem.webp" alt="หน้าตั้ง PIN จากคำเชิญ มีช่องรหัสเชิญและช่อง PIN สองช่อง"></div><figcaption>หน้าตั้ง PIN จากคำเชิญ</figcaption></figure></div>
+      <div style="display:flex;flex-direction:column;gap:3mm">
+        <h3>ครั้งแรก: รับคำเชิญ</h3>
+        <ol class="steps">
+          <li><span>เปิด<b>ลิงก์คำเชิญ</b>ที่ได้รับทาง LINE หน้าตั้ง PIN จะเปิดพร้อมรหัสเชิญให้</span></li>
+          <li><span>หรือเปิดแอป แตะ <b>ผู้ใช้ใหม่ / ได้รับคำเชิญ</b> แล้วแตะ <b>สแกน QR คำเชิญ</b> จากโทรศัพท์ของผู้เชิญ หรือพิมพ์รหัส 6 ตัว</span></li>
+          <li><span>ตั้ง <b>PIN 4 หลัก</b> พิมพ์ทั้งสองช่องให้ตรงกัน PIN ต้องไม่ซ้ำกับผู้ใช้คนอื่น</span></li>
+          <li><span>แตะ <b>ตั้ง PIN และเข้าใช้งาน</b> แอปเข้าสู่ระบบให้ทันที และแสดงรหัสผู้ใช้ของท่าน เช่น <span class="mono">GD03</span></span></li>
+        </ol>
+        <h3 style="margin-top:2mm">ครั้งต่อไป</h3>
+        <ol class="steps">
+          <li><span>เปิด <b>phemarajata.github.io/bxt50-tags</b> พิมพ์ PIN แล้วแตะ <b>เข้าใช้งาน</b> แอปรู้เองว่าท่านเป็นรปภ.</span></li>
+          <li><span>ชื่อของท่านอยู่มุมขวาบน แตะชื่อเพื่อ<b>ออกจากระบบ</b>ทุกครั้งที่เลิกใช้งาน</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="grid3">
+      <div class="stat"><span class="n">5 นาที</span>ไม่มีการใช้งาน 5 นาที แอปออกจากระบบเอง ถ้าปิดหน้าแอปแล้วเปิดใหม่ภายใน 5 นาที ไม่ต้องใส่ PIN ใหม่</div>
+      <div class="stat"><span class="n">12 ชม.</span>ใช้งานต่อเนื่องได้สูงสุด 12 ชั่วโมงต่อการเข้าสู่ระบบหนึ่งครั้ง จากนั้นต้องใส่ PIN ใหม่</div>
+      <div class="stat"><span class="n">10 ครั้ง</span>ใส่ PIN หรือรหัสเชิญผิดรวม 10 ครั้ง (นับทุกเครื่องรวมกัน) ระบบหยุดรับการเข้าสู่ระบบ 15 นาที</div>
+    </div>
+    <div class="callout navy"><b>จุดสถานะใต้ปุ่ม</b> สีเขียว = เชื่อมต่อฐานข้อมูลแล้ว · สีเหลือง = กำลังตรวจสอบ · สีแดง = ติดต่อไม่ได้ ให้แตะ <b>ตรวจสอบอีกครั้ง</b> หากเห็นกล่องสีเหลือง <b>โหมดทดลอง</b> แปลว่ายังเชื่อมต่อฐานข้อมูลไม่ได้ ข้อมูลที่เห็นเป็นตัวอย่าง ห้ามใช้ตัดสินสิทธิ์จอดรถ</div>
+    <div class="callout"><b>เพิ่มไอคอนบนหน้าจอโทรศัพท์</b> Android (Chrome): เมนู ⋮ → เพิ่มลงในหน้าจอหลัก · iPhone (Safari): ปุ่มแชร์ → เพิ่มไปยังหน้าจอโฮม หากกล้องไม่เปิดจากไอคอน ให้เปิดผ่านเบราว์เซอร์แทน</div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 3 รปภ.</span><span>3.2 / 6</span></div>
+</section>
+<section class="page " data-part="guard">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">3.3 · SCAN</div><h2>สแกน<span>บัตรจอดรถ</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/raptor/hero.webp" alt="Raptor"></div>
+    <div class="split l1">
+      <div class="shots"><figure><div class="phone"><img src="img/gd-home.webp" alt="หน้าแรก มีกรอบสแกน QR ช่องพิมพ์เลขบัตร"></div><figcaption>หน้าแรกหลังเข้าสู่ระบบ</figcaption></figure></div>
+      <div style="display:flex;flex-direction:column;gap:3mm">
+        <h3>สแกน QR บนบัตร</h3>
+        <ol class="steps">
+          <li><span>แตะกรอบสีกรมท่า <b>แตะเพื่อเปิดกล้องสแกน QR</b> ครั้งแรกให้กด<b>อนุญาต</b>การใช้กล้อง</span></li>
+          <li><span>เล็ง QR บนบัตรให้อยู่ในกรอบ ห่างประมาณ 15–25 ซม. บัตรรถยนต์ติดด้านในกระจกหน้า บัตรจักรยานยนต์ติดบนตัวรถ ผลแสดงทันที</span></li>
+          <li><span>ถ้า QR อ่านไม่ได้ (แสงสะท้อน ฟิล์มเข้ม) ให้<b>พิมพ์เลขบัตร</b>ที่พิมพ์อยู่บนบัตร เช่น CO001 แล้วแตะ <b>ค้นหา</b> เว้นวรรคหรือพิมพ์ตัวเล็กก็ได้</span></li>
+        </ol>
+        <table><thead><tr><th>อักษรนำ</th><th>ประเภทบัตร</th></tr></thead><tbody>
+          <tr><td class="mono">CO</td><td>รถยนต์ · เจ้าของร่วม</td></tr><tr><td class="mono">CR</td><td>รถยนต์ · ผู้เช่า</td></tr>
+          <tr><td class="mono">MO</td><td>จักรยานยนต์ · เจ้าของร่วม</td></tr><tr><td class="mono">MR</td><td>จักรยานยนต์ · ผู้เช่า</td></tr></tbody></table>
+        <p class="small">ตามด้วยเลข 3 หลัก ถ้าขึ้น <b>ไม่พบเลขบัตร … ในทะเบียน</b> แปลว่าเลขผิดหรือไม่ใช่บัตรของโครงการ</p>
+        
+        <h3>หน้าแรกของ รปภ.</h3>
+        <p>รปภ. เปิดบัตรได้ด้วยการสแกนหรือพิมพ์เลขบัตรเท่านั้น ค้นหาด้วยทะเบียนรถหรือเลขห้องไม่ได้ ถ้ารถไม่มีบัตรหรือบัตรอ่านไม่ออก ให้โทรสอบถามสำนักงานนิติฯ <b>065-472-1182</b></p>
+      </div>
+    </div>
+    <div class="callout"><b>ข้อมูลอัปเดตเมื่อไร</b> แอปโหลดทะเบียนทั้งหมดครั้งเดียวตอนเข้าสู่ระบบ ถ้าเพิ่งมีการลงทะเบียนหรือแก้ไขบัตรหลังจากนั้น ให้แตะ <b>โหลดใหม่</b> ที่ด้านล่างหน้าแรกก่อนสแกน บรรทัดล่างสุดบอกจำนวนบัตรที่โหลดและเวลาออกจากระบบอัตโนมัติ</div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 3 รปภ.</span><span>3.3 / 6</span></div>
+</section>
+<section class="page " data-part="guard">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">3.4 · TAG STATUS</div><h2>อ่าน<span>สถานะบัตร</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/toom/hero.webp" alt="ตู้ม"></div>
+    <p class="lead">สถานะอยู่บนสุดของหน้าบัตร แถบสีด้านบนการ์ดและป้ายมุมขวาบอกผลทันที ใต้เลขบัตรบอกวันหมดอายุหรือเหตุผล</p>
+    <div class="shots c2" style="max-width:124mm;margin:0 auto;width:100%"><figure><div class="crop"><img src="img/gd-st-valid.webp" alt="การ์ดสถานะ บัตรใช้ได้"></div><figcaption><span class="s-ok">● บัตรใช้ได้</span></figcaption></figure><figure><div class="crop"><img src="img/gd-st-expired.webp" alt="การ์ดสถานะ บัตรหมดอายุ"></div><figcaption><span class="s-bad">● บัตรหมดอายุ</span></figcaption></figure><figure><div class="crop"><img src="img/gd-st-lost.webp" alt="การ์ดสถานะ แจ้งหาย"></div><figcaption><span class="s-bad">● แจ้งหาย</span></figcaption></figure><figure><div class="crop"><img src="img/gd-st-unissued.webp" alt="การ์ดสถานะ ยังไม่ออกบัตร"></div><figcaption><span class="s-none">● ยังไม่ออกบัตร</span></figcaption></figure></div><table><thead><tr><th>ผลที่เห็น</th><th>ควรทำอย่างไร</th></tr></thead><tbody>
+          <tr><td class="key s-ok">● บัตรใช้ได้</td><td>จอดได้ตามสิทธิ์ที่แสดงในหน้าบัตร</td></tr>
+          <tr><td class="key s-warn">● บัตรใกล้หมดอายุ</td><td>ยังใช้ได้ เหลือไม่เกิน 30 วัน</td></tr>
+          <tr><td class="key s-bad">● บัตรหมดอายุ</td><td>มักเป็นผู้เช่าที่สัญญาสิ้นสุด แจ้งสำนักงานนิติฯ</td></tr>
+          <tr><td class="key s-bad">● แจ้งหาย</td><td>บัตรถูกแจ้งหายแล้ว หากพบบนรถ แจ้งสำนักงานนิติฯ ทันที</td></tr>
+          <tr><td class="key s-bad">● ยกเลิก / คืนบัตรแล้ว</td><td>ไม่มีสิทธิ์จอดในโครงการ แจ้งสำนักงานนิติฯ</td></tr>
+          <tr><td class="key s-none">● ยังไม่ออกบัตร</td><td>ไม่ควรพบบนรถ แตะ <b>โหลดใหม่</b> ที่หน้าแรกแล้วสแกนอีกครั้ง ถ้ายังขึ้นเหมือนเดิม แจ้งสำนักงานนิติฯ</td></tr>
+          <tr><td class="key s-bad">▣ รถคันที่ 2 ค้างชำระ</td><td>ค่าธรรมเนียมรายปีของรถคันที่ 2 เลยกำหนด แจ้งสำนักงานนิติฯ</td></tr></tbody></table><div class="callout navy"><b>แอปตัดสินสถานะอย่างไร</b> ดูสถานะในทะเบียนก่อน (ยังไม่ออก · สูญหาย · ยกเลิก · คืนแล้ว) ถ้าเป็น ใช้งาน จึงดูวันหมดอายุบัตร ถ้าไม่ได้กรอกไว้ ถือว่าหมดอายุ 31 ธ.ค. 2570 เลยวันแล้ว = หมดอายุ · เหลือไม่เกิน 30 วัน = ใกล้หมดอายุ · มากกว่านั้น = ใช้ได้</div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 3 รปภ.</span><span>3.4 / 6</span></div>
+</section>
+<section class="page " data-part="guard">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">3.5 · GUARD VIEW</div><h2>ข้อมูลที่<span>รปภ. เห็น</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/jeed/hero.webp" alt="จี๊ด"></div>
+    <div class="split l2w">
+      <div class="shots c2"><figure><div class="phone"><img src="img/gd-rec-top.webp" alt="หน้าบัตรของ รปภ. ส่วนบน"></div><figcaption>สถานะ สิทธิ์ และข้อมูลรถ</figcaption></figure><figure><div class="phone"><img src="img/gd-rec-bottom.webp" alt="หน้าบัตรของ รปภ. ส่วนล่าง"></div><figcaption>เบอร์โทรและข้อแนะนำ</figcaption></figure></div>
+      <div style="display:flex;flex-direction:column;gap:3mm">
+        <div class="card"><h3>สิ่งที่ รปภ. เห็น</h3><ul class="dia">
+          <li><span>สถานะบัตรและวันหมดอายุ</span></li><li><span>สิทธิ์ช่องผู้พิการ หรือช่องบิ๊กไบค์ และรถไฟฟ้า EV</span></li>
+          <li><span>ทะเบียน ยี่ห้อ รุ่น สี รูปรถ</span></li><li><span>เลขห้อง เบอร์โทร และจำนวนครั้งที่กระทำผิด</span></li></ul></div>
+        <div class="card hot"><h3>สิ่งที่ รปภ. ไม่เห็น</h3><p>ชื่อ บ้านเลขที่ LINE ID เบอร์สำรอง หมายเหตุ และรายละเอียดการกระทำผิด ระบบไม่ส่งข้อมูลเหล่านี้มาที่เครื่องของ รปภ. หากต้องการ ให้ติดต่อสำนักงานนิติฯ</p></div>
+        <div class="card"><h3>ติดต่อเจ้าของรถ</h3><p>แตะปุ่มโทรศัพท์สีกรมท่าข้างเบอร์โทร เพื่อโทรหาผู้ลงทะเบียนรถได้ทันที</p></div>
+      </div>
+    </div>
+    <div class="panel"><div class="kicker">พบการกระทำผิด</div><p><b>รปภ. บันทึกการกระทำผิดเองไม่ได้</b> ให้แจ้งสำนักงานนิติฯ พร้อมเลขบัตร วันและเวลา และรายละเอียดที่พบ สำนักงานจะบันทึกในระบบให้ โทร <b>065-472-1182</b></p></div>
+    <div class="callout navy">ทุกครั้งที่เปิดบัตร ระบบบันทึกชื่อของท่านและเวลาไว้ ใช้ข้อมูลเพื่อดูแลที่จอดรถเท่านั้น</div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 3 รปภ.</span><span>3.5 / 6</span></div>
+</section>
+<section class="page " data-part="guard">
+  <div class="band"></div>
+  <div class="body">
+    <div class="head"><div><div class="kicker">3.6 · FAQ</div><h2>คำถาม<span>ที่พบบ่อย</span></h2><div class="rule"></div></div><img class="pet" src="../assets/cast/khaitoon/notice.webp" alt="ไข่ตุ๋น"></div>
+    <div class="grid2" style="align-items:start"><div class="callout"><b>กล้องไม่เปิด</b><br>ตรวจว่าเปิดผ่านลิงก์ github.io และอนุญาตกล้องแล้ว: ตั้งค่า → Chrome หรือ Safari → กล้อง จากนั้นโหลดหน้าใหม่ หรือพิมพ์เลขบัตรแทน</div><div class="callout"><b>สแกน QR ไม่ติด</b><br>เปลี่ยนมุมเพื่อลดแสงสะท้อนบนกระจก หรือพิมพ์เลขบัตรที่พิมพ์อยู่บนบัตรแทน</div><div class="callout"><b>ขึ้นว่า ไม่พบเลขบัตรในทะเบียน</b><br>บัตรอาจไม่ใช่ของโครงการหรือพิมพ์เลขผิด ตรวจอักษร CO / CR / MO / MR และเลข 3 หลัก</div><div class="callout"><b>เพิ่งลงทะเบียนแต่ขึ้น ยังไม่ออกบัตร</b><br>แตะ โหลดใหม่ ที่ด้านล่างหน้าแรก แล้วสแกนอีกครั้ง แอปโหลดทะเบียนตอนเข้าสู่ระบบเท่านั้น</div><div class="callout"><b>ลืม PIN</b><br>แจ้งสำนักงานนิติฯ ให้กด รีเซ็ต PIN แล้วรับคำเชิญใหม่ ตั้ง PIN ใหม่ด้วยตนเอง</div><div class="callout"><b>ขึ้นว่า ระบบหยุดรับชั่วคราว 15 นาที</b><br>มีการใส่ PIN หรือรหัสเชิญผิดรวม 10 ครั้ง รอ 15 นาทีแล้วลองใหม่ หากเกิดบ่อยให้แจ้งสำนักงาน</div><div class="callout"><b>ถูกออกจากระบบเอง</b><br>ไม่มีการใช้งาน 5 นาที หรือใช้ต่อเนื่องครบ 12 ชั่วโมง ใส่ PIN เพื่อเข้าใหม่ได้ทันที</div><div class="callout"><b>รูปสัตว์บนหน้าจอเปลี่ยนทุกวัน</b><br>เป็นสัตว์เลี้ยงจริงของคณะกรรมการ 7 ตัว ผลัดกันขึ้นจอวันละชุด ไม่มีผลต่อการใช้งาน: ไข่ตุ๋น จี๊ด และตู้ม ของคุณเฟิร์น · มะเขือ &amp; มังคุด ของคุณเบนซ์ · Raptor ของคุณอาย · จู๋จี๋ และเหมียว ของคุณพีระ</div></div>
+    <div class="grid2" style="grid-template-columns:1.25fr 1fr">
+      <div class="panel"><div class="kicker">PRIVACY</div><ul class="dia">
+        <li><span>ข้อมูลอยู่ในชีตส่วนตัวของนิติบุคคล เปิดได้ผ่านแอปหลังใส่ PIN เท่านั้น</span></li>
+        <li><span>ออกจากระบบแล้ว ข้อมูลทะเบียนไม่ค้างในโทรศัพท์</span></li>
+        <li><span>ทุกการเปิดดู แก้ไข และดูรูป ถูกบันทึกชื่อผู้ใช้และเวลา</span></li>
+        <li><span>ใช้ข้อมูลเพื่อดูแลที่จอดรถเท่านั้น</span></li></ul></div>
+      <div class="card"><div class="kicker" style="color:var(--muted)">CONTACT</div><h3>สำนักงานนิติบุคคลอาคารชุด</h3>
+        <div class="mono" style="font-size:15pt;font-weight:700;color:var(--orange-ink)">065-472-1182</div>
+        <div class="mono" style="font-size:9.5pt;word-break:break-all">juristic.brixtonphahol50@gmail.com</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>คู่มือแอปบัตรจอดรถ · ส่วนที่ 3 รปภ.</span><span>3.6 / 6</span></div>
+</section>
+</main>
+</body>
+</html>

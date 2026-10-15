@@ -20,6 +20,7 @@ Version 2 (October 2026) moves the app out of Claude Design into plain files and
 | `assets/` | Brixton logo and the pet artwork (resized WebP copies of the design system cuts). |
 | `vendor/` | React 18.3.1, htm, qrcode-generator and jsQR, pinned and stored here so the app never depends on an outside server staying up. |
 | `demo/tags-demo.csv` | Seven sample serials with no personal data, used only in demo mode. |
+| `guide/` | The Thai user guide (A4, three sections: office, committee, guard). Served at `/guide/`. |
 
 There is no build step. Every file is served as it is.
 
@@ -53,6 +54,12 @@ To add a pose, copy the cut from the design system (`assets/artwork/cast/<pet>/<
 
 - Open `?demo=1` (for example https://phemarajata.github.io/bxt50-tags/?demo=1) for the training mode used in the user guide screenshots. It never contacts the Apps Script.
 - If the Apps Script cannot be reached, the app falls back to demo mode with PIN 1111 (guard), 2222 (office) and 3333 (committee) on sample data.
+
+## User guide
+
+The guide lives at https://phemarajata.github.io/bxt50-tags/guide/. Add `#office`, `#committee` or `#guard` to show (and print) one section only. Each section stands alone, so it can be handed to that group without the others. Print with the button at the top, A4, no margins.
+
+`guide/index.html` is plain HTML with one `<section class="page">` per printed sheet, so small wording changes can be made there directly. Text that runs past the bottom of a page is cut off when printed, so check the page in a browser after editing. Screenshots in `guide/img/` come from `?demo=1` and show only fictional names. Retake them when a screen changes.
 
 ## Security notes
 
